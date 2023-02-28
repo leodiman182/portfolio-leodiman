@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PageProvider from './context/PageContext/Provider';
+import LanguageProvider from './context/LanguageContext/Provider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <LanguageProvider>
+      <PageProvider>
+        <App />
+      </PageProvider>
+    </LanguageProvider>
   </React.StrictMode>
 );
 

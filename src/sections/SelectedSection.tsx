@@ -1,9 +1,24 @@
+import { useContext } from 'react';
+import { PageContext } from '../context/PageContext/Context';
+
+import AboutSection from "./AboutSection";
+import HomeSection from "./HomeSection";
+import ProjectsSection from "./ProjectsSection";
+import SkillsSection from "./SkillsSection";
+
+
 const SelectedSection = () => {
+  const { page } = useContext(PageContext);
+
+  console.log(page);
+  
+
   return (
     <section className="px-[20px]">
-      <h2 className="font1 text-my-pink-300 text-[28px] py-[15px] font-bold text-left pl-[50px]">
-        Home
-      </h2>
+      <HomeSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
     </section>
   )
 }
