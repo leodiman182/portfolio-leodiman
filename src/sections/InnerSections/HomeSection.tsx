@@ -6,17 +6,17 @@ const HomeTyping1 = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Olá!', // Types 'One'
-        1000, // Waits 1s
-        'Muito prazer,', // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
-        'eu sou o Léo :)', // Types 'Three' without deleting 'Two'
+        'OLÁ!',
+        1000,
+        'MUITO PRAZER,',
+        2000,
+        'EU SOU O LÉO :)',
         2500,
       ]}
       wrapper="div"
       cursor={true}
       repeat={0}
-      style={{ fontSize: '50px' }}
+      style={{ fontSize: '45px' }}
     />
   );
 };
@@ -29,16 +29,21 @@ const HomeSection = () => {
 
   return (
     <section className="px-[20px]">
-      <h2 className="font1 text-my-pink-300 text-[28px] py-[15px] font-bold text-left pl-[50px]">
+      <h2 className="font1 text-my-pink-300 text-[28px] py-[15px] font-bold text-left pl-[30px]">
         <HomeTyping1 />
       </h2>
       {
-        showMessage && (
-          <h2 className="font2 text-white text-[35px] font-bold text-left pl-[50px] fadeIn">
+        showMessage ? (
+          <h2 className="font1 text-white text-[28px] font-bold text-left pl-[50px] fadeIn">
             Desenvolvedor Fullstack
           </h2>
+        ) : (
+          <div className='h-[42px]'></div>
         )
       }
+      <article className='font2 w-[750px] mx-auto mt-[40px] mb-[60px] text-my-pink-300 px-[40px] text-[45px] text-center font-bold'>
+        Movido pela paixão por diferentes culturas, experiências e soluções de problemas.
+      </article>      
     </section>
   )
 }

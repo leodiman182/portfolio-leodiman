@@ -26,7 +26,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="fixed bottom-0 w-full max-w-[1024px]">
+    <footer className="w-full max-w-[1024px]">
       <article className="flex flex-row w-full items-center justify-between pt-[35px] pb-[75px]">
         <div className="font1 uppercase font-bold text-white">
           © {year} Leonardo Diman

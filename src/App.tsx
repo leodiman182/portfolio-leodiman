@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <div className='bg-black h-screen w-full relative'>
+    <div className='bg-black h-full w-full relative'>
       {
         page === undefined ? (
           <div className='h-full w-screen relative'>
