@@ -11,3 +11,7 @@
 a:hover > svg {
   fill: black;
 }
+
+h2:hover > span {
+  color: #FA5AAD;
+}

@@ -1,5 +1,6 @@
 import { useContext } from "react"
-import { PageContext } from "../context/PageContext/Context"
+import { PageContext } from "../context/PageContext/Context";
+import '../styles/styles.css'
 
 const Header = () => {
   const { page, setPage } = useContext(PageContext);
@@ -41,11 +42,11 @@ const Header = () => {
           <span className={page === 'resume' ? 'bg-my-pink-100 py-[4px] font-medium text-black opacity-100 group-hover:opacity-100 duration-150 uppercase' : 'text-white opacity-80 group-hover:opacity-100 duration-150 uppercase'}>currículo</span>
           <span className="absolute -bottom-[1px] right-0 w-0 h-[1.5px] bg-my-pink-100 group-hover:w-full group-hover:transition-all rounded-full ease-in-out"></span>
         </p>
-        <h2 onClick={() => setPage('home')} className='text-white text-[50px] font1 mb-[30px] hover:cursor-pointer hover:scale-105 duration-150'>
+        <h2 onClick={() => setPage('home')} className='text-white text-[50px] font1 mb-[30px] hover:cursor-pointer duration-150'>
           &nbsp;
-          <span className='text-my-pink-300 font-700 group-hover:cursor-pointer'>&lt;&nbsp;</span>
-          dev<span className="text-my-pink-300 group-hover:cursor-pointer">.</span>leo
-          <span className='text-my-pink-300 font-700 group-hover:cursor-pointer'>&nbsp;&nbsp;/&gt;</span>
+          <span className='text-my-pink-300 font-700 group-hover:cursor-pointer duration-150 ease-in-out'>&lt;&nbsp;</span>
+          dev<span className="text-my-pink-300 group-hover:cursor-pointer duration-150 ease-in-out">.</span>leo
+          <span className='text-my-pink-300 font-700 group-hover:cursor-pointer duration-150 ease-in-out'>&nbsp;&nbsp;/&gt;</span>
         </h2>
         <p onClick={() => setPage('about')} className="relative group hover:cursor-pointer font1">
           <span className={page === 'about' ? 'bg-my-pink-100 py-[4px] font-medium text-black opacity-100 group-hover:opacity-100 duration-150 uppercase' : 'text-white opacity-80 group-hover:opacity-100 duration-150 uppercase'}>sobre mim</span>
