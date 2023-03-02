@@ -28,20 +28,22 @@ const HomeSection = () => {
   }, [])
 
   return (
-    <section className="px-[20px]">
-      <h2 className="font1 text-my-pink-300 text-[28px] py-[15px] font-bold text-left pl-[30px]">
-        <HomeTyping1 />
-      </h2>
-      {
-        showMessage ? (
-          <h2 className="font1 text-white text-[28px] font-bold text-left pl-[50px] fadeIn">
-            Desenvolvedor Fullstack
-          </h2>
-        ) : (
-          <div className='h-[42px]'></div>
-        )
-      }
-      <article className='font2 w-[750px] mx-auto mt-[40px] mb-[60px] text-my-pink-300 px-[40px] text-[45px] text-center font-bold'>
+    <section className="px-[20px] flex flex-col items-center">
+      <div className='flex flex-col items-end'>
+        <h2 className="font1 text-my-pink-300 text-[28px] text-left">
+          <HomeTyping1 />
+        </h2>
+        {
+          showMessage ? (
+            <h2 className="font1 text-my-pink-300 text-[20px] text-left fadeIn mr-[10px]">
+              Desenvolvedor Fullstack
+            </h2>
+          ) : (
+            <div className='h-[30px]'></div>
+          )
+        }
+      </div>
+      <article className='font2 w-[768px] mx-auto mt-[10px] mb-[90px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]'>
         Movido pela paixão por diferentes culturas, experiências e soluções de problemas.
       </article>      
     </section>
