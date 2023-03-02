@@ -43,7 +43,7 @@ const HomeSection = () => {
           )
         }
       </div>
-      <article className='font2 w-[768px] mx-auto mt-[10px] mb-[90px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]'>
+      <article className='font2 w-[768px] mx-auto mt-[50px] mb-[90px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]'>
         Movido pela paixão por diferentes culturas, experiências e soluções de problemas.
       </article>      
     </section>

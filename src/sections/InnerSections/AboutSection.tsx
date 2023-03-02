@@ -6,7 +6,7 @@ const AboutSection = () => {
   const { setPage } = useContext(PageContext);
 
   return (
-    <section className="">
+    <section>
       <h2 className="font2 text-my-pink-300 text-[34px] py-[40px] font-bold text-center px-[150px]">
         Buscando a presença, comunicação e arte nas coisas mais simples da vida
       </h2>

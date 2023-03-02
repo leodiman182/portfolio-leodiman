@@ -44,9 +44,9 @@ const Header = () => {
         </p>
         <h2 onClick={() => setPage('home')} className='text-white text-[50px] font1 mb-[30px] hover:cursor-pointer duration-150'>
           &nbsp;
-          <span className='text-my-pink-300 font-700 group-hover:cursor-pointer duration-150 ease-in-out'>&lt;&nbsp;</span>
-          dev<span className="text-my-pink-300 group-hover:cursor-pointer duration-150 ease-in-out">.</span>leo
-          <span className='text-my-pink-300 font-700 group-hover:cursor-pointer duration-150 ease-in-out'>&nbsp;&nbsp;/&gt;</span>
+          <span className={page === 'home' ? 'text-my-pink-100 font-700 group-hover:cursor-pointer duration-150 ease-in-out' : 'text-my-pink-500 font-700 group-hover:cursor-pointer duration-150 ease-in-out'}>&lt;&nbsp;</span>
+          dev<span className={page === 'home' ? "text-my-pink-100 group-hover:cursor-pointer duration-150 ease-in-out" : 'text-my-pink-500 group-hover:cursor-pointer duration-150 ease-in-out'}>.</span>leo
+          <span className={page === 'home' ? 'text-my-pink-100 font-700 group-hover:cursor-pointer duration-150 ease-in-out' : 'text-my-pink-500 font-700 group-hover:cursor-pointer duration-150 ease-in-out'}>&nbsp;&nbsp;/&gt;</span>
         </h2>
         <p onClick={() => setPage('about')} className="relative group hover:cursor-pointer font1">
           <span className={page === 'about' ? 'bg-my-pink-100 py-[4px] font-medium text-black opacity-100 group-hover:opacity-100 duration-150 uppercase' : 'text-white opacity-80 group-hover:opacity-100 duration-150 uppercase'}>sobre mim</span>

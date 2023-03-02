@@ -14,4 +14,13 @@ a:hover > svg {
 
 h2:hover > span {
   color: #FA5AAD;
+  text-shadow:
+    0 0 7px #FA5AAD,
+    0 0 10px #FA5AAD,
+    0 0 21px #FA5AAD,
+    0 0 42px #FA5AAD,
+    0 0 82px #FA5AAD,
+    0 0 92px #FA5AAD,
+    0 0 102px #FA5AAD,
+    0 0 151px #FA5AAD;
 }
