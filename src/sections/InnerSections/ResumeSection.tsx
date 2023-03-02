@@ -59,7 +59,7 @@ const ProjectsSection = () => {
               <li className="pb-[5px] text-[18px]">NodeJS</li>
               <li className="pb-[5px] text-[18px]">MySQL</li>
               <li className="pb-[5px] text-[18px]">MongoDB</li>
-              <li className="pb-[5px] text-[18px]">CSS</li>
+              <li className="pb-[5px] text-[18px]">Docker</li>
             </ul>
           </div>
         </aside>
