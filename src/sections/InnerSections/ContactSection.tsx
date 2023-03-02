@@ -24,8 +24,8 @@ const footerLinks = [
 const ContactSection = () => {
   return (
     <section className="px-[20px] text-center flex flex-col items-center">
-      <h2 className="font2 text-white text-[40px] py-[15px] font-bold text-left pl-[50px] hover:cursor-default">
-        mailto: <span className="text-my-pink-300 hover:underline">leonardo.diman@gmail.com</span>
+      <h2 className="font2 text-white text-[38px] py-[40px] font-bold text-center px-[150px]">
+        mailto: <span className="text-my-pink-300 hover:cursor-default hover:text-my-pink-100 duration-150">leonardo.diman@gmail.com</span>
       </h2>
       <aside className="flex flex-col items-center w-[768px] px-[40px]">
         <div className="my-[60px] flex flex-row items-center justify-between w-full">
@@ -35,7 +35,7 @@ const ContactSection = () => {
           <div className="flex flex-row items-center justify-around w-[400px] h-[45px] ">
             {
               footerLinks.map(obj => (
-                <a className="p-[6px] hover:scale-110 duration-150 hover:bg-my-pink-300 border-my-pink-300 rounded-md ml-[30px]" key={ obj.name } href={ obj.url }>
+                <a className="p-[6px] duration-150 border-my-pink-300 rounded-md ml-[30px]  hover:bg-my-pink-100" key={ obj.name } href={ obj.url }>
                   { obj.icon }
                 </a>
               ))
@@ -50,7 +50,7 @@ const ContactSection = () => {
             <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[20px]" htmlFor="contact-name">
               Nome
               <input
-                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-300"
+                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
                 type="text"
                 name="contact-name"
                 id="contact-name"
@@ -59,7 +59,7 @@ const ContactSection = () => {
             <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[20px]" htmlFor="contact-email">
               Email
               <input
-                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-300"
+                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
                 type="text"
                 name="contact-email"
                 id="contact-email"
@@ -69,14 +69,14 @@ const ContactSection = () => {
               Mensagem
               <textarea
                 rows={4}
-                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-300"
+                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
                 name="contact-email"
                 id="contact-email"
               />
             </label>
           </form>
         </div>        
-        <button className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-300 hover:text-black">
+        <button className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black">
           ENVIAR
         </button>
       </aside>

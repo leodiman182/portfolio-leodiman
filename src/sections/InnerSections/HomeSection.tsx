@@ -22,7 +22,7 @@ const HomeTyping1 = () => {
 };
 
 const HomeSection = () => {
-  const [showMessage, setShowMessage] = useState(false)
+  const [showMessage, setShowMessage] = useState(false);
   useEffect(() => {
     setInterval(() => setShowMessage(true), 6500);
   }, [])
