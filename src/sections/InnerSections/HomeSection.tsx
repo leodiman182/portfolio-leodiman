@@ -28,7 +28,7 @@ const HomeSection = () => {
   }, [])
 
   return (
-    <section className="px-[20px] flex flex-col items-center">
+    <section className="px-[20px] flex flex-col items-center pt-[40px] md:pt-0">
       <div className='flex flex-col items-end'>
         <h2 className="font1 text-my-pink-300 text-[28px] text-left">
           <HomeTyping1 />

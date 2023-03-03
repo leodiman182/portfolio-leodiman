@@ -2,6 +2,68 @@ import { useContext } from 'react';
 import { PageContext } from '../../context/PageContext/Context';
 import profilePic from '../../assets/pictures/PERFIL1X1BRANCO.jpg';
 
+import image1 from '../../assets/pictures/album/1.jpg';
+import image2 from '../../assets/pictures/album/2.jpg';
+import image3 from '../../assets/pictures/album/3.jpg';
+import image4 from '../../assets/pictures/album/4.jpg';
+import image5 from '../../assets/pictures/album/5.jpg';
+import image7 from '../../assets/pictures/album/7.jpg';
+import image9 from '../../assets/pictures/album/9.jpg';
+import image10 from '../../assets/pictures/album/10.jpg';
+
+const galleryImages = [
+  {
+    alt: 'Fazendo umas das coisas que mais amo - tocar!',
+    src: image10,
+    className: '',
+  },
+  {
+    alt: 'Prosa Interior - um podcast de Bariri para o mundo',
+    src: image1,
+    className: '',
+  },
+  {
+    alt: 'Cachoeira Monte Sião em Analândia - SP',
+    src: image5,
+    className: 'object-top',
+  },
+  {
+    alt: 'Viajando com minha mãe para o Chile',
+    src: image4,
+    className: '',
+  },
+  {
+    alt: 'Evento beneficente realizado pelo Prosa Interior',
+    src: image2,
+  },
+  {
+    alt: 'Intercâmbio de 2011 nos EUA',
+    src: image7,
+    className: '',
+  },
+  {
+    alt: 'Intercâmbio voluntário na República Tcheca em 2018',
+    src: image9,
+    className: 'object-top',
+  },
+  {
+    alt: 'Encontro dos baixistas de Bauru/SP - Bass Day',
+    src: image3,
+    className: '',
+  },  
+  // {
+  //   alt: 'Paz no caiaque em Avaré-SP',
+  //   src: image6,
+  //   className: '',
+  // },
+  // {
+  //   alt: 'Descendo ladeiras de longboard',
+  //   src: image8,
+  //   className: 'object-bottom',
+  // },
+  
+]
+
 const AboutSection = () => {
   const { setPage } = useContext(PageContext);
 
@@ -12,7 +74,7 @@ const AboutSection = () => {
       </h2>
       <article className="grid grid-cols-2 mb-[40px]">
         <aside className="col-span-1">
-          <img className='p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 mt-[75px]' src={ profilePic } alt="Profile pic Leonardo" />
+          <img className='p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 mt-[80px]' src={ profilePic } alt="Profile pic Leonardo" />
         </aside>
         <aside className="col-span-1 pr-[75px]">
           <h4 className="font1 text-my-pink-300 text-[20px] text-left uppercase mb-[10px] font-medium">
@@ -37,6 +99,25 @@ const AboutSection = () => {
           FALE COMIGO
         </button>
       </div>
+      <aside>
+        <h3 className="font2 text-my-pink-300 text-[34px] pt-[20px] pb-[40px] font-bold text-center px-[150px]">
+          Um pouco mais de mim
+        </h3>
+        <div className='grid md:grid-cols-2 w-full xl:w-[1000px] gap-[30px]'>
+          {
+            galleryImages.map(img => (
+            <div className='col-span-1 relative w-full h-[300px]'>
+              <div className='w-full h-full bg-my-pink-300 opacity-0 hover:opacity-90 absolute flex flex-col justify-center items-center duration-150 px-[30px] text-center'>
+                <h3 className='font2 text-white font-bold text-[28px] hover:cursor-default'>
+                  { img.alt }
+                </h3>
+              </div>
+              <img className={`w-full h-full object-cover ${ img.className}`} src={ img.src } alt={ img.src } />
+            </div>
+            ))
+          }
+        </div>
+      </aside>
     </section>
   )
 }

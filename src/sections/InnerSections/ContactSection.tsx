@@ -27,7 +27,7 @@ const ContactSection = () => {
       <h2 className="font2 text-white text-[38px] py-[40px] font-bold text-center px-[150px]">
         mailto: <p className="inline text-my-pink-300 hover:cursor-default hover:text-my-pink-100 duration-150">leonardo.diman@gmail.com</p>
       </h2>
-      <aside className="flex flex-col items-center w-[768px] px-[40px]">
+      <aside className="flex flex-col items-center w-[768px] px-[40px] mb-[50px]">
         <div className="my-[60px] flex flex-row items-center justify-between w-full">
           <h3 className="text-white font1 text-[26px]">
             Vamos nos conectar

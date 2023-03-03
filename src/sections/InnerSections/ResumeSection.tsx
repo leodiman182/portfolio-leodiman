@@ -1,3 +1,35 @@
+const skills = [
+  {
+    skillArea: 'front-end',
+    array: [
+      'ReactJS',
+      'React Router',
+      'TailwindCSS',
+      'VueJS',
+      'Bootstrap',
+      'RTL',
+      'CSS',
+    ]
+  },
+  {
+    skillArea: 'back-end',
+    array: [
+      'NodeJS',
+      'MySQL',
+      'MongoDB',
+      'Docker',
+    ]
+  },
+  {
+    skillArea: 'outras skills',
+    array: [
+      'Photoshop',
+      'Premiere',
+      'Reaper (DAW)',
+    ]
+  },
+];
+
 const ProjectsSection = () => {
   return (
     <section>
@@ -37,31 +69,23 @@ const ProjectsSection = () => {
             Habilidades
           </h2>
         </aside>
-        <aside className="col-span-1 grid grid-cols-2">
-          <div className="col-span-1">
-            <h4 className="uppercase font1 text-[20px] text-my-pink-300">
-              front-end
-            </h4>
-            <ul className="text-white font1 mt-[20px]">
-              <li className="pb-[5px] text-[18px]">ReactJS</li>
-              <li className="pb-[5px] text-[18px]">React Router</li>
-              <li className="pb-[5px] text-[18px]">TailwindCSS</li>
-              <li className="pb-[5px] text-[18px]">Bootstrap</li>
-              <li className="pb-[5px] text-[18px]">RLT</li>
-              <li className="pb-[5px] text-[18px]">CSS</li>
-            </ul>
-          </div>
-          <div className="col-span-1">
-            <h4 className="uppercase font1 text-[20px] text-my-pink-300">
-              back-end
-            </h4>
-            <ul className="text-white font1 mt-[20px]">
-              <li className="pb-[5px] text-[18px]">NodeJS</li>
-              <li className="pb-[5px] text-[18px]">MySQL</li>
-              <li className="pb-[5px] text-[18px]">MongoDB</li>
-              <li className="pb-[5px] text-[18px]">Docker</li>
-            </ul>
-          </div>
+        <aside className="col-span-1 grid grid-cols-3">
+          {
+            skills.map(el => (
+              <div className="col-span-1">
+                <h4 className="uppercase font1 text-[20px] text-my-pink-300">
+                  { el.skillArea }
+                </h4>
+                <ul className="text-white font1 mt-[20px]">
+                  {
+                    el.array.map(skill => (
+                      <li className="pb-[5px] text-[18px]">{ skill }</li>
+                    ))
+                  }
+                </ul>
+              </div>
+            ))
+          }
         </aside>
       </article>
     </section>
