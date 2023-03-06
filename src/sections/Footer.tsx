@@ -29,11 +29,11 @@ const Footer = () => {
 
   return (
     <footer className="w-full max-w-[1024px]">
-      <article className="flex flex-row w-full items-center justify-between pt-[35px] pb-[75px] pl-[40px] xl:pl-0">
+      <article className="flex flex-col md:flex-row w-full items-center justify-between md:pt-[35px] pb-[75px] md:pl-[40px] xl:pl-0">
         <div className="font1 uppercase font-bold text-my-pink-300">
           © {year} Leonardo Diman
         </div>
-        <div className="flex flex-row items-center justify-evenly w-[275px] h-[45px]">
+        <div className="flex flex-row items-center justify-evenly md:w-[275px] h-[45px] mt-[20px] md:mt-0">
           {
             footerLinks.map(obj => (
               <a className="p-[6px] duration-150 hover:bg-my-pink-100 border-my-pink-300 rounded-md" key={ obj.name } href={ obj.url }>

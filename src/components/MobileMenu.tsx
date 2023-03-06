@@ -45,7 +45,7 @@ const MobileMenu = () => {
         dev<span className="text-my-pink-300">.</span>leo
         <span className='text-my-pink-300 font-700'>&nbsp;&nbsp;/&gt;</span>
       </h2>
-      <nav className='z-20'>
+      <nav className='z-20 items-center'>
         <button onClick={() => {setOpenMenu(!openMenu)}}>
           {
             openMenu ? (

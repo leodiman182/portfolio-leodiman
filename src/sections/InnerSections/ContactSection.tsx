@@ -23,31 +23,31 @@ const footerLinks = [
 
 const ContactSection = () => {
   return (
-    <section className="px-[20px] text-center flex flex-col items-center">
-      <h2 className="font2 text-white text-[38px] py-[40px] font-bold text-center px-[150px]">
-        mailto: <p className="inline text-my-pink-300 hover:cursor-default hover:text-my-pink-100 duration-150">leonardo.diman@gmail.com</p>
+    <section className="px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0">
+      <h2 className="font2 text-white text-[18px] md:text-[38px] pt-[20px] md:py-[40px] font-bold text-center md:px-[150px]">
+        mailto: <p className="inline text-my-pink-300 hover:cursor-default hover:text-my-pink-100 duration-150 text-[20px] md:text-[38px]">leonardo.diman@gmail.com</p>
       </h2>
-      <aside className="flex flex-col items-center w-[768px] px-[40px] mb-[50px]">
-        <div className="my-[60px] flex flex-row items-center justify-between w-full">
-          <h3 className="text-white font1 text-[26px]">
+      <aside className="flex flex-col items-center md:w-[768px] md:px-[40px] md:mb-[50px]">
+        <div className="my-[40px] md:my-[60px] flex flex-col md:flex-row items-center justify-between w-full">
+          <h3 className="text-white font1 text-[20px] pb-[20px] md:pb-0">
             Vamos nos conectar
           </h3>
-          <div className="flex flex-row items-center justify-around w-[400px] h-[45px] ">
+          <div className="flex flex-row items-center justify-around w-full md:w-[400px] h-[45px] ">
             {
               footerLinks.map(obj => (
-                <a className="p-[6px] duration-150 border-my-pink-300 rounded-md ml-[30px]  hover:bg-my-pink-100" key={ obj.name } href={ obj.url }>
+                <a className="md:p-[6px] duration-150 border-my-pink-300 rounded-md md:ml-[30px] hover:bg-my-pink-100" key={ obj.name } href={ obj.url }>
                   { obj.icon }
                 </a>
               ))
             }
           </div>
         </div>
-        <div className="mb-[40px] flex flex-row items-center justify-between w-full">
-        <h3 className="text-white font1 text-[26px]">
+        <div className="mb-[40px] flex flex-col md:flex-row items-center justify-between w-full">
+        <h3 className="text-white font1 text-[20px] md:text-[26px] pb-[20px] md:pb-0">
             Vamos nos falar
           </h3>
-          <form className="flex flex-col items-between justify-center w-[375px]">
-            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[20px]" htmlFor="contact-name">
+          <form className="flex flex-col items-between justify-center md:w-[375px]">
+            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-name">
               Nome
               <input
                 className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
@@ -56,7 +56,7 @@ const ContactSection = () => {
                 id="contact-name"
               />
             </label>
-            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[20px]" htmlFor="contact-email">
+            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
               Email
               <input
                 className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
@@ -65,7 +65,7 @@ const ContactSection = () => {
                 id="contact-email"
               />
             </label>
-            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[20px]" htmlFor="contact-email">
+            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
               Mensagem
               <textarea
                 rows={4}

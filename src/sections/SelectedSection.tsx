@@ -17,7 +17,7 @@ const SelectedSection = () => {
   }, [page])
 
   return (
-    <section className="px-[20px]">
+    <section className="px-[10px] md:px-[20px]">
       {
         page === 'portfolio'
         ? (
