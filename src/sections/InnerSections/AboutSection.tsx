@@ -68,16 +68,16 @@ const AboutSection = () => {
   const { setPage } = useContext(PageContext);
 
   return (
-    <section>
-      <h2 className="font2 text-my-pink-300 text-[34px] py-[40px] font-bold text-center px-[150px]">
+    <section className='pb-[50px] md:pb-0'>
+      <h2 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] font-bold text-center md:px-[150px]">
         Buscando a presença, comunicação e arte nas coisas mais simples da vida
       </h2>
-      <article className="grid grid-cols-2 mb-[40px]">
-        <aside className="col-span-1">
-          <img className='p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 mt-[80px]' src={ profilePic } alt="Profile pic Leonardo" />
+      <article className="flex flex-col justify-center md:grid md:grid-cols-2 md:mb-[40px]">
+        <aside className="mb-[28px] md:mb-0 md:col-span-1">
+          <img className='p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 md:mt-[40px]' src={ profilePic } alt="Profile pic Leonardo" />
         </aside>
-        <aside className="col-span-1 pr-[75px]">
-          <h4 className="font1 text-my-pink-300 text-[20px] text-left uppercase mb-[10px] font-medium">
+        <aside className="md:col-span-1 md:pr-[75px] px-[10px] md:px-0">
+          <h4 className="font1 text-my-pink-300 text-[20px] text-justify md:text-left uppercase mb-[20px] md:mb-[10px] font-medium">
             Muito prazer! Eu sou o Léo :)
           </h4>
           <p className="font1 text-white text-[16px] font-normal">
@@ -100,7 +100,7 @@ const AboutSection = () => {
         </button>
       </div>
       <aside>
-        <h3 className="font2 text-my-pink-300 text-[34px] pt-[20px] pb-[40px] font-bold text-center px-[150px]">
+        <h3 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] md:py-[20px] font-bold text-center md:px-[150px]">
           Um pouco mais de mim
         </h3>
         <div className='grid md:grid-cols-2 w-full xl:w-[1000px] gap-[30px]'>
