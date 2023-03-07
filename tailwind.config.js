@@ -14,6 +14,9 @@ module.exports = {
         "project1": "#000228",
         "project2": "#f4623a",
         "project3": "#fcc293",
+        "react": "#61DAFB",
+        "tailwind": "#06B6D4",
+        
       }
     },
   },

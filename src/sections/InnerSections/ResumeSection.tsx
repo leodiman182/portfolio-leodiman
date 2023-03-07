@@ -37,7 +37,7 @@ const skills = [
 
 const ProjectsSection = () => {
   return (
-    <section>
+    <section className="mb-[100px] md:mb-[50px]">
       <h2 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] font-bold text-center md:px-[150px]">
         Desenvolvedor Fullstack morando atualmente em Bauru, SP
       </h2>
