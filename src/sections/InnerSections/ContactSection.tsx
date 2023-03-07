@@ -35,7 +35,7 @@ const ContactSection = () => {
           <div className="flex flex-row items-center justify-around w-full md:w-[400px] h-[45px] ">
             {
               footerLinks.map(obj => (
-                <a className="md:p-[6px] duration-150 border-my-pink-300 rounded-md md:ml-[30px] hover:bg-my-pink-100" key={ obj.name } href={ obj.url }>
+                <a className="md:p-[6px] duration-150 border-my-pink-300 md:ml-[30px] hover:bg-my-pink-100" key={ obj.name } href={ obj.url }>
                   { obj.icon }
                 </a>
               ))

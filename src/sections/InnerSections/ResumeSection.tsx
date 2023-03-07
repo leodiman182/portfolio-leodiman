@@ -14,7 +14,12 @@ const skills = [
   {
     skillArea: 'back-end',
     array: [
+      'Typescript',
       'NodeJS',
+      'Express',
+      'REST',
+      'JWT',
+      'POO',
       'MySQL',
       'MongoDB',
       'Docker',

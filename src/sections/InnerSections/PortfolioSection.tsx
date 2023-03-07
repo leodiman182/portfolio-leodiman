@@ -53,15 +53,17 @@ const PortfolioSection = () => {
   }, [page])
 
   return (
-    <section className="pb-[50px]">
-      
+    <section className="pb-[50px]">      
       {
         selectedProject.name === '' ? (
           <>
-            <h2 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] font-bold text-center md:px-[150px]">
+            <h2 className="font2 text-my-pink-300 text-[26px] md:text-[34px] font-bold text-center md:px-[150px]">
               Criando, experimentando e resolvendo
             </h2>
-            <div className='grid md:grid-cols-2 w-full xl:w-[1000px] gap-y-[70px] gap-x-[40px]'>
+            <h2 className="font1 text-white text-[18px] text-center md:px-[150px] -pt-[20px]">
+              Conheça alguns dos projetos que atuei como desenvolvedor
+            </h2>
+            <div className='pt-[50px] grid md:grid-cols-2 w-full xl:w-[1000px] gap-y-[70px] gap-x-[40px]'>
               {
                 projectsGallery.map(project => (
                 <div className='col-span-1 relative w-full h-[275px]'>
