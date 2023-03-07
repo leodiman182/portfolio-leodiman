@@ -30,7 +30,8 @@ a:hover > svg {
   fill: black;
 }
 
-h2:hover > span {
+h2:hover > span,
+.neon {
   color: #FA5AAD;
   text-shadow:
     0 0 7px #FA5AAD,

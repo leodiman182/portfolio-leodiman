@@ -11,6 +11,9 @@ module.exports = {
         "my-pink-300": "#D64E95",
         "my-pink-200": "#ED55A4",
         "my-pink-100": "#FA5AAD",
+        "project1": "#000228",
+        "project2": "#f4623a",
+        "project3": "#fcc293",
       }
     },
   },
