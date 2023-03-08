@@ -1,3 +1,4 @@
+import { useState } from 'react';
 const footerLinks = [
   {
     name: 'LinkedIn!',
@@ -22,6 +23,9 @@ const footerLinks = [
 ];
 
 const ContactSection = () => {
+  const [contactName, setContactName] = useState('');
+  const [contactMessage, setContactMessage] = useState('');
+
   return (
     <section className="px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0">
       <h2 className="font2 text-white text-[18px] md:text-[38px] pt-[20px] md:py-[40px] font-bold text-center md:px-[150px]">
@@ -35,7 +39,7 @@ const ContactSection = () => {
           <div className="flex flex-row items-center justify-around w-full md:w-[400px] h-[45px] ">
             {
               footerLinks.map(obj => (
-                <a className="md:p-[6px] duration-150 border-my-pink-300 md:ml-[30px] hover:bg-my-pink-100" key={ obj.name } href={ obj.url }>
+                <a target='_blank' className="md:p-[6px] duration-150 border-my-pink-300 md:ml-[30px] hover:bg-my-pink-100" key={ obj.name } href={ obj.url } rel="noreferrer">
                   { obj.icon }
                 </a>
               ))
@@ -50,13 +54,15 @@ const ContactSection = () => {
             <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-name">
               Nome
               <input
+                value={contactName}
+                onChange={(e) => setContactName(e.target.value)}
                 className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
                 type="text"
                 name="contact-name"
                 id="contact-name"
               />
             </label>
-            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
+            {/* <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
               Email
               <input
                 className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
@@ -64,10 +70,12 @@ const ContactSection = () => {
                 name="contact-email"
                 id="contact-email"
               />
-            </label>
+            </label> */}
             <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
               Mensagem
               <textarea
+                value={contactMessage}
+                onChange={(e) => setContactMessage(e.target.value)}
                 rows={4}
                 className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
                 name="contact-email"
@@ -76,9 +84,9 @@ const ContactSection = () => {
             </label>
           </form>
         </div>        
-        <button className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black">
+        <a target='_blank' className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black" href={`https://wa.me/5514981395514?text=Aqui%20é%20${contactName}!%20${contactMessage}`} rel="noreferrer">
           ENVIAR
-        </button>
+        </a>
       </aside>
     </section>
   )

@@ -59,12 +59,12 @@ const HomeSection = () => {
                 Desenvolvedor Fullstack
               </h2>
             ) : (
-              <div className='h-[30px]'></div>
+              <div className='h-[24px]'></div>
               )
             }
         </div>
         <article className='font2 mx-auto mt-[50px] mb-[90px] text-white text-[28px] text-center font-medium'>
-          Movido pela paixão por diferentes culturas, experiências e soluções de problemas.
+          Amante das artes, comunicador por natureza e solucionador de problemas
         </article>      
       </section>
 
@@ -84,8 +84,8 @@ const HomeSection = () => {
             )
           }
         </div>
-        <article className='font2 w-[768px] mx-auto mt-[50px] mb-[90px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]'>
-          Movido pela paixão por diferentes culturas, experiências e soluções de problemas.
+        <article className='font2 w-[768px] mx-auto mt-[50px] mb-[120px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]'>
+          Amante das artes, comunicador por natureza e solucionador de problemas
         </article>      
       </section>    
     </>

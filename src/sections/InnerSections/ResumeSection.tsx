@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       </h2>
       <aside className="flex flex-col items-center">
         <div className="flex flex-row w-full items-center justify-evenly">
-          <a className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[20px] md:text-[26px] px-[30px] py-[8px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black" href="https://publuu.com/flip-book/93211/257135" download='portuguese-resume'>BAIXAR CURRÍCULO
+          <a className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[20px] md:text-[26px] px-[30px] py-[8px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black" href="https://drive.google.com/file/d/14AeRbMWZeQypZVXNpSMieRyv9o3-2L_1/view?usp=share_link" download>BAIXAR CURRÍCULO
           </a>
         </div>
       </aside>

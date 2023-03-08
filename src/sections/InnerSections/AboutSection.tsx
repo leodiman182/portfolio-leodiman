@@ -23,6 +23,11 @@ const galleryImages = [
     className: '',
   },
   {
+    alt: 'Evento de tecnologia no interior de São Paulo com a AGA!',
+    src: image3,
+    className: '',
+  }, 
+  {
     alt: 'Cachoeira Monte Sião em Analândia - SP',
     src: image5,
     className: 'object-top',
@@ -46,11 +51,6 @@ const galleryImages = [
     src: image9,
     className: 'object-top',
   },
-  {
-    alt: 'Encontro dos baixistas de Bauru/SP - Bass Day',
-    src: image3,
-    className: '',
-  },  
   // {
   //   alt: 'Paz no caiaque em Avaré-SP',
   //   src: image6,

@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="flex flex-row items-center justify-evenly md:w-[275px] h-[45px] mt-[20px] md:mt-0">
           {
             footerLinks.map(obj => (
-              <a className="p-[6px] duration-150 hover:bg-my-pink-100 border-my-pink-300" key={ obj.name } href={ obj.url }>
+              <a target='_blank' className="p-[6px] duration-150 hover:bg-my-pink-100 border-my-pink-300" key={ obj.name } href={ obj.url } rel="noreferrer">
                 { obj.icon }
               </a>
             ))
