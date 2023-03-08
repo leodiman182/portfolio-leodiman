@@ -51,17 +51,6 @@ const galleryImages = [
     src: image9,
     className: 'object-top',
   },
-  // {
-  //   alt: 'Paz no caiaque em Avaré-SP',
-  //   src: image6,
-  //   className: '',
-  // },
-  // {
-  //   alt: 'Descendo ladeiras de longboard',
-  //   src: image8,
-  //   className: 'object-bottom',
-  // },
-  
 ]
 
 const AboutSection = () => {
@@ -80,17 +69,13 @@ const AboutSection = () => {
           <h4 className="font1 text-my-pink-300 text-[20px] text-justify md:text-left uppercase mb-[20px] md:mb-[10px] font-medium">
             Muito prazer! Eu sou o Léo :)
           </h4>
-          <p className="font1 text-white text-[16px] font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos optio numquam sunt rerum cupiditate. Autem molestias consequatur tempore dicta consectetur saepe commodi optio quasi maiores, odio nemo repudiandae est!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos optio numquam sunt rerum cupiditate. Autem molestias consequatur tempore dicta consectetur saepe commodi optio quasi maiores, odio nemo repudiandae est!
-          </p>
-          <br />
-          <p className="font1 text-white text-[16px] font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias saepe laboriosam vero, commodi ex sequi cumque explicabo quis aliquam rerum tenetur ipsa, dolor, libero ratione! Eligendi quaerat explicabo voluptate.
-          </p>
-          <br />
-          <p className="font1 text-white text-[16px] font-normal">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatum, cumque soluta impedit recusandae laboriosam? Temporibus fugit quidem iure officia voluptas.
+          <p className="font1 text-white text-[18px] font-normal">
+            Atualmente, atuo como desenvolvedor fullstack e descobri o prazer por aprender através do desenvolvimento. Aprecio cada pequena solução encontrada no dia a dia. 
+            Em grande escala, sonho contribuir com projetos que impactem positivamente a vida de muitas pessoas.
+            <br /><br />
+            Fora do trabalho, amo música (já fiz mais de 300 shows e lancei álbuns nas plataformas digitais), sou gamer (coleciono videogames e passo horas jogando, se puder) e fui co-host de um podcast descontraído (com a marca de 50 episódios no ar)
+            <br /><br />
+            Amo viajar e conhecer pessoas de diferentes lugares, idiomas e culturas. Também amo estar em contato com a natureza, acampando ou explorando.
           </p>
         </aside>
       </article>

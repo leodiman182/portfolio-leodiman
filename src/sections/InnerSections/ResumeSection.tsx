@@ -55,8 +55,7 @@ const ProjectsSection = () => {
         </aside>
         <aside className="md:col-span-1 md:pr-[75px] text-center md:text-left">
           <p className="font1 text-white text-[16px] font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos optio numquam sunt rerum cupiditate. Autem molestias consequatur tempore dicta consectetur saepe commodi optio quasi maiores, odio nemo repudiandae est!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos optio numquam sunt rerum cupiditate. Autem molestias consequatur tempore dicta consectetur saepe commodi optio quasi maiores, odio nemo repudiandae est!
+            Trabalhei como desenvolvedor front-end na AGA Tecnologia - uma startup do interior de São Paulo - por quase dois anos, onde descobri uma paixão pelo design e criação de interfaces práticas e agradáveis. Para complementar meus conhecimentos, estou estudando UX Design em um curso oferecido pela Google.
           </p>
           <br />
           <p className="font1 text-white text-[16px] font-normal">
