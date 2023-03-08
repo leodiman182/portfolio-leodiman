@@ -71,7 +71,7 @@ const AboutSection = () => {
           </h4>
           <p className="font1 text-white text-[18px] font-normal">
             Atualmente, atuo como desenvolvedor fullstack e descobri o prazer por aprender através do desenvolvimento. Aprecio cada pequena solução encontrada no dia a dia. 
-            Em grande escala, sonho contribuir com projetos que impactem positivamente a vida de muitas pessoas.
+            Em grande escala, sonho contribuir com projetos que impactem positivamente a vida de muitas pessoas e me tornar referência em alguma tecnologia.
             <br /><br />
             Fora do trabalho, amo música (já fiz mais de 300 shows e lancei álbuns nas plataformas digitais), sou gamer (coleciono videogames e passo horas jogando, se puder) e fui co-host de um podcast descontraído (com a marca de 50 episódios no ar)
             <br /><br />

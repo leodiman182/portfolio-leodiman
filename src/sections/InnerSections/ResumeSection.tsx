@@ -54,16 +54,14 @@ const ProjectsSection = () => {
           </h2>
         </aside>
         <aside className="md:col-span-1 md:pr-[75px] text-center md:text-left">
-          <p className="font1 text-white text-[16px] font-normal">
-            Trabalhei como desenvolvedor front-end na AGA Tecnologia - uma startup do interior de São Paulo - por quase dois anos, onde descobri uma paixão pelo design e criação de interfaces práticas e agradáveis. Para complementar meus conhecimentos, estou estudando UX Design em um curso oferecido pela Google.
-          </p>
-          <br />
-          <p className="font1 text-white text-[16px] font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias saepe laboriosam vero, commodi ex sequi cumque explicabo quis aliquam rerum tenetur ipsa, dolor, libero ratione! Eligendi quaerat explicabo voluptate.
-          </p>
-          <br />
-          <p className="font1 text-white text-[16px] font-normal">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatum, cumque soluta impedit recusandae laboriosam? Temporibus fugit quidem iure officia voluptas.
+          <p className="font1 text-white text-[18px] font-normal">
+            Ingressei na carreira de tecnologia por acaso e acabei me encantando. Após transição de carreira, tive a oportunidade e o privilégio de estagiar com um desenvolvedor sênior logo no começo dos meus estudos, que me abriu as portas e me ajudou tanto na parte técnica, quanto pessoalmente, me ajudando a me enxergar dentro dessa área.
+            <br /><br />
+            Pouco alguns meses depois, comecei meus estudos na Trybe, escola de desenvolvimento web, buscando ainda mais conhecimento. Em paralelo a isso, meu mentor oficializou a criação da empresa e acabou me contratando como desenvolvedor no processo.     
+            <br /><br />
+            Trabalhei como desenvolvedor front-end na AGA Tecnologia - uma startup do interior de São Paulo - por quase dois anos, onde descobri uma paixão pelo design e criação de interfaces práticas e agradáveis. Para complementar meus conhecimentos, estou estudando UX Design em um curso oferecido pela Google, além dos estudos e aplicações constantes de novas ferramentas do desenvolvimento web como fullstack.
+            <br /><br />
+            Antes de programar, graduei em Relações Internacionais pela Universidade do Sagrado Coração e atuei como professor de inglês durante 3 anos da minha vida. Tive uma experiência menos ususal como músico, onde lancei álbuns nas plataformas digitais e realizei, junto com minha banda, mais de 200 shows e eventos. Além disso, fiz um intercâmbio voluntário onde dei aulas de inglês e música.
           </p>
         </aside>
       </article>
