@@ -3,6 +3,7 @@ import { PageContext } from '../context/PageContext/Context';
 
 import { BiMenu } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
+import Logo from './Logo';
 
 // GrFormClose
 
@@ -39,12 +40,7 @@ const MobileMenu = () => {
 
   return (
     <section className='flex flex-row items-center justify-between md:hidden'>
-      <h2 onClick={() => setPage('home')} className='text-white text-[30px] font1 hover:cursor-pointer'>
-        &nbsp;
-        <span className='text-my-pink-300 font-700'>&lt;&nbsp;</span>
-        dev<span className="text-my-pink-300">.</span>leo
-        <span className='text-my-pink-300 font-700'>&nbsp;&nbsp;/&gt;</span>
-      </h2>
+      <Logo />
       <nav className='z-20 items-center'>
         <button onClick={() => {setOpenMenu(!openMenu)}}>
           {
