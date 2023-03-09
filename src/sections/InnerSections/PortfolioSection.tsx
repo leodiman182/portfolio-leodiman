@@ -1,38 +1,59 @@
 import { useState, useContext, useEffect } from 'react';
-import agaPic from '../../assets/portfolio/single-aga-site/pic-aga.jpg'
-import dvittoPic from '../../assets/portfolio/single-dvitto/pic-dvitto.jpg'
-import landingPic from '../../assets/portfolio/single-landing-bot/pic-landing.jpg'
+// import agaPic from '../../assets/portfolio/single-aga-site/pic-aga.jpg';
+// import dvittoPic from '../../assets/portfolio/single-dvitto/pic-dvitto.jpg';
+// import landingPic from '../../assets/portfolio/single-landing-bot/pic-landing.jpg';
+import bot1 from '../../assets/portfolio/usain-bot/1.jpg';
+import bot2 from '../../assets/portfolio/usain-bot/2.jpg';
+import bot3 from '../../assets/portfolio/usain-bot/3.jpg';
+import bot4 from '../../assets/portfolio/usain-bot/4.jpg';
+import bot5 from '../../assets/portfolio/usain-bot/5.jpg';
 import { PageContext } from '../../context/PageContext/Context';
 
 import { AiOutlineCaretLeft } from "react-icons/ai";
 
 const projectsGallery = [
+  // {
+  //   name: 'site | AGA Tecnologia',
+  //   description: 'Esse website foi desenvolvido para a empresa AGA Tecnologia, com o intuito de apresentar um pouco mais sobre a empresa e seus membros de uma forma simples e descontraída, seus produtos e serviços, além de links para contato. ',
+  //   singlePage: true,
+  //   imageGallery: [
+  //     agaPic,
+  //   ],
+  //   link: 'https://agatecnologia.com/',
+  //   color: 'project1',
+  //   alt: 'o site da AGA',
+  // },
+  // {
+  //   name: "site | Armazém D'Vitto",
+  //   description: "Esse website foi desenvolvido para o Armazém D'Vitto, bar/restaurante da cidade de Bariri, com o intuito de ser um lugar informativo e de apresentação do espaço, com galeria de fotos, links para pedidos delivery e cardápio - tudo isso customizável com uma página administrativa também desenvolvida pela AGA Tecnologia, onde o cliente consegue atualizar praticamente todos os elementos do site, inclusive as cores primárias.",
+  //   singlePage: true,
+  //   imageGallery: [
+  //     dvittoPic,
+  //   ],
+  //   link: 'https://armazemdvitto.com.br/',
+  //   color: 'project2',
+  //   alt: "o site do D'Vitto",
+  // },
+  // {
+  //   name: 'landing page | usain-bot',
+  //   description: 'Essa landing page foi desenvolvida para a empresa AGA Tecnologia em cima de um estudo feito sobre landing Pages, com o intuito de informar sobre o produto e atrair possíveis leads, deixando o acesso bem prático - a um QR CODE de distância.',
+  //   singlePage: true,
+  //   imageGallery: [
+  //     landingPic,
+  //   ],
+  //   link: '',
+  //   color: 'project3',
+  //   alt: 'a landing page do usain-bot',
+  // },
   {
-    name: 'site | AGA Tecnologia',
-    description: 'Esse website foi desenvolvido para a empresa AGA Tecnologia, com o intuito de apresentar um pouco mais sobre a empresa e seus membros de uma forma simples e descontraída, seus produtos e serviços, além de links para contato. ',
-    singlePage: true,
-    image: agaPic,
-    link: 'https://agatecnologia.com/',
-    color: 'project1',
-    alt: 'o site da AGA',
-  },
-  {
-    name: "site | Armazém D'Vitto",
-    description: "Esse website foi desenvolvido para o Armazém D'Vitto, bar/restaurante da cidade de Bariri, com o intuito de ser um lugar informativo e de apresentação do espaço, com galeria de fotos, links para pedidos delivery e cardápio - tudo isso customizável com uma página administrativa também desenvolvida pela AGA Tecnologia, onde o cliente consegue atualizar praticamente todos os elementos do site, inclusive as cores primárias.",
-    singlePage: true,
-    image: dvittoPic,
-    link: 'https://armazemdvitto.com.br/',
-    color: 'project2',
-    alt: "o site do D'Vitto",
-  },
-  {
-    name: 'landing page | usain-bot',
-    description: 'Essa landing page foi desenvolvida para a empresa AGA Tecnologia em cima de um estudo feito sobre landing Pages, com o intuito de informar sobre o produto e atrair possíveis leads, deixando o acesso bem prático - a um QR CODE de distância.',
-    singlePage: true,
-    image: landingPic,
-    link: '',
+    name: 'adm | usain-bot',
+    description: 'Essa página foi uma reestilização do zero da parte administrativa de um dos produtos da AGA Tecnologia - o usain-bot. A ideia era trazer uma página administrativa bem mais intuitiva e aconchegante, com um design mais moderno e fácil. Nessa página, o usuário tem acesso à toda a parte administrativa de seu bot, desde configurações de mensagens, cadastro de novos clientes, edição de mensagens e arquivos a serem enviados pelo bot. ',
+    imageGallery: [
+      bot1, bot2, bot3, bot4, bot5
+    ],
+    link: 'https://usainbot.com/login',
     color: 'project3',
-    alt: 'a landing page do usain-bot',
+    alt: 'a página administrativa do bot',
   },
 ];
 
@@ -42,7 +63,7 @@ const PortfolioSection = () => {
   const [selectedProject, setSelectedProject] = useState({
     name: '',
     description: '',
-    image: '',
+    imageGallery: [''],
     link: '',
   });
 
@@ -50,8 +71,8 @@ const PortfolioSection = () => {
     setSelectedProject({
       name: '',
       description: '',
-      image: '',
-      link: '',
+      imageGallery: [''],
+      link: ''
     })
   }, [page])
 
@@ -76,14 +97,14 @@ const PortfolioSection = () => {
                   <div onClick={() => setSelectedProject({
                     name: project.name,
                     description: project.description,
-                    image: project.image,
+                    imageGallery: project.imageGallery,
                     link: project.link,
                   })} className={`w-full h-full opacity-0 hover:opacity-90 absolute flex flex-col justify-center items-center duration-150 px-[30px] text-center bg-my-pink-500 hover:cursor-pointer`}>
                     <h3 className='font2 text-white font-bold text-[28px] hover:cursor-default hover:cursor-pointer'>
                       Saiba mais sobre {project.alt}
                     </h3>
                   </div>
-                  <img className='w-full h-full object-cover object-top' src={ project.image } alt={ project.name } />
+                  <img className='w-full h-full object-cover object-top' src={ project.imageGallery[0] } alt={ project.name } />
                 </div>
                 ))
               }
@@ -91,12 +112,12 @@ const PortfolioSection = () => {
           </>
         ) : (
           <div className='flex flex-col items-center justify-center xl:w-[1000px] w-full'>
-            <div className='flex flex-row items-center justify-center w-full mt-[20px]'>
+            <div className='flex flex-row items-center justify-center w-full mt-[25px] mb-[50px]'>
               <button onClick={() => setSelectedProject({
                 name: '',
                 description: '',
-                image: '',
-                link: '',
+                imageGallery: [''],
+                link: ''
               })}>
                 <AiOutlineCaretLeft className='text-my-pink-300 text-[30px] md:text-[50px] hover:scale-125 duration-150' />
               </button>
@@ -104,12 +125,22 @@ const PortfolioSection = () => {
                 { selectedProject.name }
               </h3>
             </div>
-            <div className='w-full flex flex-col items-end justify-center h-[750px] overflow-y-scroll hidescroll py-[50px] md:px-[120px]'>
-              <p className='font1 text-white text-[18px] md:text-[20px] text-center'>
-                { selectedProject.description }
-              </p>
-              <img className='w-full object-top' src={ selectedProject.image } alt={ selectedProject.name } />
+
+
+            <div className={`w-full flex flex-row overflow-x-scroll h-[500px] flex-nowrap`}>
+              {
+                selectedProject.imageGallery.map(image => (
+                  <div className='col-span-1 inline-block w-full'>
+                    <img className='w-full h-auto' src={ image } alt={ selectedProject.name } />
+                  </div>
+                ))
+              }
             </div>
+            <p className='font1 text-white text-[18px] md:text-[20px] text-center'>
+              { selectedProject.description }
+            </p>
+
+
             <div className='w-full flex flex-col items-center justify-center'>
               <h4 className="uppercase font1 md:text-[20px] text-my-pink-300 mt-[20px]">
                 Stacks utilizadas

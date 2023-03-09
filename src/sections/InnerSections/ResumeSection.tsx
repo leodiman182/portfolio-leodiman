@@ -59,7 +59,7 @@ const ProjectsSection = () => {
             <br /><br />
             Pouco alguns meses depois, comecei meus estudos na Trybe, escola de desenvolvimento web, buscando ainda mais conhecimento. Em paralelo a isso, meu mentor oficializou a criação da empresa e acabou me contratando como desenvolvedor no processo.     
             <br /><br />
-            Trabalhei como desenvolvedor front-end na AGA Tecnologia - uma startup do interior de São Paulo - por quase dois anos, onde descobri uma paixão pelo design e criação de interfaces práticas e agradáveis. Para complementar meus conhecimentos, estou estudando UX Design em um curso oferecido pela Google, além dos estudos e aplicações constantes de novas ferramentas do desenvolvimento web como fullstack.
+            Trabalhei como desenvolvedor front-end na AGA Tecnologia - uma startup do interior de São Paulo - por quase dois anos, onde descobri uma paixão pelo design e criação de interfaces práticas e agradáveis. Para complementar meus conhecimentos, estou estudando UX Design em um curso oferecido pela Google, além dos estudos e aplicações constantes de novas ferramentas, como NextJS.
             <br /><br />
             Antes de programar, graduei em Relações Internacionais pela Universidade do Sagrado Coração e atuei como professor de inglês durante 3 anos da minha vida. Tive uma experiência menos ususal como músico, onde lancei álbuns nas plataformas digitais e realizei, junto com minha banda, mais de 200 shows e eventos. Além disso, fiz um intercâmbio voluntário onde dei aulas de inglês e música.
           </p>
