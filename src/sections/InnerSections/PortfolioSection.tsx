@@ -127,16 +127,29 @@ const PortfolioSection = () => {
             </div>
 
 
-            <div className={`w-full flex flex-row overflow-x-scroll h-[500px] flex-nowrap`}>
-              {
-                selectedProject.imageGallery.map(image => (
-                  <div className='col-span-1 inline-block w-full'>
-                    <img className='w-full h-auto' src={ image } alt={ selectedProject.name } />
-                  </div>
-                ))
-              }
+            <div className={`w-full h-[500px] flex overflow-x-scroll hideSB`}>
+                {
+                  selectedProject.imageGallery.map(image => (
+                    <div className='min-w-[800px] max-h-[500px] ml-[2rem] flex flex-col items-center justify-center'>
+                      <img className='w-[800px] object-cover' src={ image } alt={ selectedProject.name } />
+                    </div>
+                  ))
+                }
+                {/* <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>2</p></div>
+                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>3</p></div>
+                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>4</p></div>
+                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>5</p></div>
+                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>6</p></div> */}
+                {/* {
+                  selectedProject.imageGallery.map(image => (
+                    <div className='col-span-1'>  
+                    </div>
+                  ))
+                } */}
             </div>
-            <p className='font1 text-white text-[18px] md:text-[20px] text-center'>
+
+
+            <p className='font1 text-white text-[18px] md:text-[20px] text-center my-[50px]'>
               { selectedProject.description }
             </p>
 
