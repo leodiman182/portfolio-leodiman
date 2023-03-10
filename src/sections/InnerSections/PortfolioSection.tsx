@@ -1,47 +1,11 @@
 import { useState, useContext, useEffect } from 'react';
-// import dvittoPic from '../../assets/portfolio/single-dvitto/pic-dvitto.jpg';
-// import landingPic from '../../assets/portfolio/single-landing-bot/pic-landing.jpg';
 
-import land1 from '../../assets/portfolio/landing-bot/1.jpg';
-import land2 from '../../assets/portfolio/landing-bot/2.jpg';
-import land3 from '../../assets/portfolio/landing-bot/3.jpg';
-
-import dv1 from '../../assets/portfolio/dvitto/1.jpg';
-import dv2 from '../../assets/portfolio/dvitto/2.jpg';
-import dv3 from '../../assets/portfolio/dvitto/3.jpg';
-
-import bot1 from '../../assets/portfolio/usain-bot/1.jpg';
-import bot2 from '../../assets/portfolio/usain-bot/2.jpg';
-import bot3 from '../../assets/portfolio/usain-bot/3.jpg';
-import bot4 from '../../assets/portfolio/usain-bot/4.jpg';
-import bot5 from '../../assets/portfolio/usain-bot/5.jpg';
-
-import mu1 from '../../assets/portfolio/mercado-unido/1.jpg';
-import mu2 from '../../assets/portfolio/mercado-unido/2.jpg';
-import mu3 from '../../assets/portfolio/mercado-unido/3.jpg';
-import mu4 from '../../assets/portfolio/mercado-unido/4.jpg';
-import mu5 from '../../assets/portfolio/mercado-unido/5.jpg';
-import mu6 from '../../assets/portfolio/mercado-unido/6.jpg';
-import mu7 from '../../assets/portfolio/mercado-unido/7.jpg';
-
-import aga1 from '../../assets/portfolio/aga-site/1.jpg';
-import aga2 from '../../assets/portfolio/aga-site/2.jpg';
-import aga3 from '../../assets/portfolio/aga-site/3.jpg';
-import aga4 from '../../assets/portfolio/aga-site/4.jpg';
-import aga5 from '../../assets/portfolio/aga-site/5.jpg';
-import aga6 from '../../assets/portfolio/aga-site/6.jpg';
-import aga7 from '../../assets/portfolio/aga-site/7.jpg';
-
-import teia1 from '../../assets/portfolio/teia-exp/1.jpg';
-import teia2 from '../../assets/portfolio/teia-exp/2.jpg';
-import teia3 from '../../assets/portfolio/teia-exp/3.jpg';
-import teia4 from '../../assets/portfolio/teia-exp/4.jpg';
-import teia5 from '../../assets/portfolio/teia-exp/5.jpg';
-import teia6 from '../../assets/portfolio/teia-exp/6.jpg';
-import teia7 from '../../assets/portfolio/teia-exp/7.jpg';
-import teia8 from '../../assets/portfolio/teia-exp/8.jpg';
-import teia9 from '../../assets/portfolio/teia-exp/9.jpg';
-
+import { aga1, aga2, aga3, aga4, aga5, aga6, aga7 } from '../../assets/portfolio/aga-site/exports';
+import { dv1, dv2, dv3, } from '../../assets/portfolio/dvitto/exports';
+import { land1 , land2, land3 } from '../../assets/portfolio/landing-bot/exports';
+import { mu1, mu2, mu3, mu4, mu5, mu6, mu7 } from '../../assets/portfolio/mercado-unido/exports';
+import { teia1, teia2, teia3, teia4, teia5, teia6, teia7, teia8, teia9 } from '../../assets/portfolio/teia-exp/exports';
+import { bot1, bot2, bot3, bot4, bot5 } from '../../assets/portfolio/usain-bot/exports';
 
 import { PageContext } from '../../context/PageContext/Context';
 
@@ -188,25 +152,10 @@ const PortfolioSection = () => {
                     </div>
                   ))
                 }
-                {/* <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>2</p></div>
-                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>3</p></div>
-                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>4</p></div>
-                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>5</p></div>
-                <div className='min-w-[10rem] max-h-[10rem] bg-red-300 border-2 border-slate-500 ml-[2rem]'><p className=''>6</p></div> */}
-                {/* {
-                  selectedProject.imageGallery.map(image => (
-                    <div className='col-span-1'>  
-                    </div>
-                  ))
-                } */}
             </div>
-
-
             <p className='font1 text-white text-[18px] md:text-[20px] text-center my-[50px]'>
               { selectedProject.description }
             </p>
-
-
             <div className='w-full flex flex-col items-center justify-center'>
               <h4 className="uppercase font1 md:text-[20px] text-my-pink-300 mt-[20px]">
                 Stacks utilizadas
