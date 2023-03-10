@@ -1,7 +1,15 @@
 import { useState, useContext, useEffect } from 'react';
-// import agaPic from '../../assets/portfolio/single-aga-site/pic-aga.jpg';
 // import dvittoPic from '../../assets/portfolio/single-dvitto/pic-dvitto.jpg';
 // import landingPic from '../../assets/portfolio/single-landing-bot/pic-landing.jpg';
+
+import land1 from '../../assets/portfolio/landing-bot/1.jpg';
+import land2 from '../../assets/portfolio/landing-bot/2.jpg';
+import land3 from '../../assets/portfolio/landing-bot/3.jpg';
+
+import dv1 from '../../assets/portfolio/dvitto/1.jpg';
+import dv2 from '../../assets/portfolio/dvitto/2.jpg';
+import dv3 from '../../assets/portfolio/dvitto/3.jpg';
+
 import bot1 from '../../assets/portfolio/usain-bot/1.jpg';
 import bot2 from '../../assets/portfolio/usain-bot/2.jpg';
 import bot3 from '../../assets/portfolio/usain-bot/3.jpg';
@@ -15,6 +23,14 @@ import mu4 from '../../assets/portfolio/mercado-unido/4.jpg';
 import mu5 from '../../assets/portfolio/mercado-unido/5.jpg';
 import mu6 from '../../assets/portfolio/mercado-unido/6.jpg';
 import mu7 from '../../assets/portfolio/mercado-unido/7.jpg';
+
+import aga1 from '../../assets/portfolio/aga-site/1.jpg';
+import aga2 from '../../assets/portfolio/aga-site/2.jpg';
+import aga3 from '../../assets/portfolio/aga-site/3.jpg';
+import aga4 from '../../assets/portfolio/aga-site/4.jpg';
+import aga5 from '../../assets/portfolio/aga-site/5.jpg';
+import aga6 from '../../assets/portfolio/aga-site/6.jpg';
+import aga7 from '../../assets/portfolio/aga-site/7.jpg';
 
 import teia1 from '../../assets/portfolio/teia-exp/1.jpg';
 import teia2 from '../../assets/portfolio/teia-exp/2.jpg';
@@ -32,39 +48,6 @@ import { PageContext } from '../../context/PageContext/Context';
 import { AiOutlineCaretLeft } from "react-icons/ai";
 
 const projectsGallery = [
-  // {
-  //   name: 'site | AGA Tecnologia',
-  //   description: 'Esse website foi desenvolvido para a empresa AGA Tecnologia, com o intuito de apresentar um pouco mais sobre a empresa e seus membros de uma forma simples e descontraída, seus produtos e serviços, além de links para contato. ',
-  //   singlePage: true,
-  //   imageGallery: [
-  //     agaPic,
-  //   ],
-  //   link: 'https://agatecnologia.com/',
-  //   color: 'project1',
-  //   alt: 'o site da AGA',
-  // },
-  // {
-  //   name: "site | Armazém D'Vitto",
-  //   description: "Esse website foi desenvolvido para o Armazém D'Vitto, bar/restaurante da cidade de Bariri, com o intuito de ser um lugar informativo e de apresentação do espaço, com galeria de fotos, links para pedidos delivery e cardápio - tudo isso customizável com uma página administrativa também desenvolvida pela AGA Tecnologia, onde o cliente consegue atualizar praticamente todos os elementos do site, inclusive as cores primárias.",
-  //   singlePage: true,
-  //   imageGallery: [
-  //     dvittoPic,
-  //   ],
-  //   link: 'https://armazemdvitto.com.br/',
-  //   color: 'project2',
-  //   alt: "o site do D'Vitto",
-  // },
-  // {
-  //   name: 'landing page | usain-bot',
-  //   description: 'Essa landing page foi desenvolvida para a empresa AGA Tecnologia em cima de um estudo feito sobre landing Pages, com o intuito de informar sobre o produto e atrair possíveis leads, deixando o acesso bem prático - a um QR CODE de distância.',
-  //   singlePage: true,
-  //   imageGallery: [
-  //     landingPic,
-  //   ],
-  //   link: '',
-  //   color: 'project3',
-  //   alt: 'a landing page do usain-bot',
-  // },
   {
     name: 'adm | usain-bot',
     description: 'Essa página foi uma reestilização do zero da parte administrativa de um dos produtos da AGA Tecnologia - o usain-bot. A ideia era trazer uma página administrativa bem mais intuitiva e aconchegante, com um design mais moderno e fácil. Nessa página, o usuário tem acesso à toda a parte administrativa de seu bot, desde configurações de mensagens, cadastro de novos clientes, edição de mensagens e arquivos a serem enviados pelo bot. ',
@@ -92,6 +75,38 @@ const projectsGallery = [
     link: '',
     color: 'project3',
     alt: 'ao site da TeiaExp',
+  },
+  {
+    name: "site | Armazém D'Vitto",
+    description: "Esse website foi desenvolvido para o Armazém D'Vitto, bar/restaurante da cidade de Bariri, com o intuito de ser um lugar informativo e de apresentação do espaço, com galeria de fotos, links para pedidos delivery e cardápio - tudo isso customizável com uma página administrativa também desenvolvida pela AGA Tecnologia, onde o cliente consegue atualizar praticamente todos os elementos do site, inclusive as cores primárias.",
+    singlePage: true,
+    imageGallery: [
+      dv1, dv2, dv3, 
+    ],
+    link: 'https://armazemdvitto.com.br/',
+    color: 'project2',
+    alt: "o site do D'Vitto",
+  },
+  {
+    name: 'landing page | usain-bot',
+    description: 'Essa landing page foi desenvolvida para a empresa AGA Tecnologia em cima de um estudo feito sobre landing Pages, com o intuito de informar sobre o produto e atrair possíveis leads, deixando o acesso bem prático - a um QR CODE de distância.',
+    singlePage: true,
+    imageGallery: [
+      land1, land2, land3
+    ],
+    link: '',
+    alt: 'a landing page do usain-bot',
+  },
+  {
+    name: 'site | AGA Tecnologia',
+    description: 'Esse website foi desenvolvido para a empresa AGA Tecnologia, com o intuito de apresentar um pouco mais sobre a empresa e seus membros de uma forma simples e descontraída, seus produtos e serviços, além de links para contato. ',
+    singlePage: true,
+    imageGallery: [
+      aga1, aga2, aga3, aga4, aga5, aga6, aga7
+    ],
+    link: 'https://agatecnologia.com/',
+    color: 'project1',
+    alt: 'o site da AGA',
   },
 ];
 
