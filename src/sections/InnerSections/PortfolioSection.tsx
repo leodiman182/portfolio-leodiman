@@ -7,6 +7,26 @@ import bot2 from '../../assets/portfolio/usain-bot/2.jpg';
 import bot3 from '../../assets/portfolio/usain-bot/3.jpg';
 import bot4 from '../../assets/portfolio/usain-bot/4.jpg';
 import bot5 from '../../assets/portfolio/usain-bot/5.jpg';
+
+import mu1 from '../../assets/portfolio/mercado-unido/1.jpg';
+import mu2 from '../../assets/portfolio/mercado-unido/2.jpg';
+import mu3 from '../../assets/portfolio/mercado-unido/3.jpg';
+import mu4 from '../../assets/portfolio/mercado-unido/4.jpg';
+import mu5 from '../../assets/portfolio/mercado-unido/5.jpg';
+import mu6 from '../../assets/portfolio/mercado-unido/6.jpg';
+import mu7 from '../../assets/portfolio/mercado-unido/7.jpg';
+
+import teia1 from '../../assets/portfolio/teia-exp/1.jpg';
+import teia2 from '../../assets/portfolio/teia-exp/2.jpg';
+import teia3 from '../../assets/portfolio/teia-exp/3.jpg';
+import teia4 from '../../assets/portfolio/teia-exp/4.jpg';
+import teia5 from '../../assets/portfolio/teia-exp/5.jpg';
+import teia6 from '../../assets/portfolio/teia-exp/6.jpg';
+import teia7 from '../../assets/portfolio/teia-exp/7.jpg';
+import teia8 from '../../assets/portfolio/teia-exp/8.jpg';
+import teia9 from '../../assets/portfolio/teia-exp/9.jpg';
+
+
 import { PageContext } from '../../context/PageContext/Context';
 
 import { AiOutlineCaretLeft } from "react-icons/ai";
@@ -52,8 +72,26 @@ const projectsGallery = [
       bot1, bot2, bot3, bot4, bot5
     ],
     link: 'https://usainbot.com/login',
-    color: 'project3',
     alt: 'a página administrativa do bot',
+  },
+  {
+    name: 'site | mercado unido',
+    description: 'Essa plataforma começou a ser desenvolvida para um cliente com uma ideia de MVP voltado para a venda no varejo. Projeto reproduzido a partir de protótipo criado no Figma. Site com cards promocionais, formulários de informações e contato, integração com Firebase para autenticação por contas existentes e um layout de "quebra-cabeça" na Home, algo que foi um desafio interessante a ser ultrapassado. Toda a plataforma foi desenvolvida pelo método "mobile first", ou seja, é totalmente responsiva.',
+    imageGallery: [
+      mu1, mu2, mu3, mu4, mu5, mu6, mu7
+    ],
+    link: 'https://app-mercado-unido.web.app/',
+    alt: 'a plataforma em desenvolvimento do Mercado Unido',
+  },
+  {
+    name: 'site | teia exp',
+    description: 'Esse site foi desenvolvido como o MVP de uma startup que tinha como finalidade oferecer às empresas contratantes experiências com foco no desenvolvimento pessoal e de soft skills, visando melhor desempenho no trabalho e melhorando o ambiente de trabalho. A plataforma servia como um lugar onde as experiências, como aulas de cerâmica, teatro, surf e muitas outras, eram exibidas, avaliadas e compartilhadas.',
+    imageGallery: [
+      teia1, teia2, teia3, teia4, teia5, teia6, teia7, teia8, teia9,
+    ],
+    link: '',
+    color: 'project3',
+    alt: 'ao site da TeiaExp',
   },
 ];
 
