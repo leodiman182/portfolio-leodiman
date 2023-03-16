@@ -16,7 +16,6 @@ const MobileMenu = () => {
   useEffect(() => {
     function handleMenu() {
       const mobileMenu = document.getElementById('mobile-menu');
-      console.log(mobileMenu);
       
 
       if (openMenu === false) {
@@ -29,11 +28,8 @@ const MobileMenu = () => {
 
   }, [openMenu]);
 
-  useEffect(() => {
-    console.log(page);
-    
+  useEffect(() => {    
     setOpenMenu(false);
-    console.log(openMenu);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page])
 

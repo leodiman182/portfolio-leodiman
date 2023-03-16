@@ -7,7 +7,11 @@ import Footer from './sections/Footer';
 
 import { AiOutlineLoading } from "react-icons/ai";
 
+
 function App() {
+  function classNames(...classes: string[]) {
+    return classes.filter(Boolean).join(' ')
+  }
   const { page, setPage } = useContext(PageContext);
 
   useEffect(() => {
@@ -19,7 +23,7 @@ function App() {
 
 
   return (
-    <div className='bg-black h-full w-full relative'>
+    <div className={classNames( page === 'home' ? 'bg-black h-screen md:h-full w-full relative' :'bg-black h-full w-full relative')}>
       {
         page === undefined ? (
           <div className='h-full w-screen relative'>

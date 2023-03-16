@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { PageContext } from "../context/PageContext/Context";
 
 
@@ -10,11 +10,6 @@ import HomeSection from "./InnerSections/HomeSection";
 
 const SelectedSection = () => {
   const { page } = useContext(PageContext);
-
-  useEffect(() => {
-    console.log(page);
-    
-  }, [page])
 
   return (
     <section className="px-[10px] md:px-[20px]">
