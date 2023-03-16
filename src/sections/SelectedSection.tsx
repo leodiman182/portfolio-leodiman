@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { PageContext } from "../context/PageContext/Context";
 
-
 import PortfolioSection from "./InnerSections/PortfolioSection";
 import ResumeSection from "./InnerSections/ResumeSection";
 import AboutSection from "./InnerSections/AboutSection";

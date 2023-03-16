@@ -11,6 +11,8 @@ import image7 from '../../assets/pictures/album/7.jpg';
 import image9 from '../../assets/pictures/album/9.jpg';
 import image10 from '../../assets/pictures/album/10.jpg';
 
+import '../style.css';
+
 const galleryImages = [
   {
     alt: 'Fazendo umas das coisas que mais amo - tocar!',
@@ -61,7 +63,7 @@ const AboutSection = () => {
       <h2 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] font-bold text-center md:px-[150px]">
         Buscando a presença, comunicação e arte nas coisas mais simples da vida
       </h2>
-      <article className="flex flex-col justify-center md:grid md:grid-cols-2 md:mb-[40px]">
+      <article className="animation-fade flex flex-col justify-center md:grid md:grid-cols-2 md:mb-[40px]">
         <aside className="mb-[28px] md:mb-0 md:col-span-1">
           <img className='p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 md:mt-[40px]' src={ profilePic } alt="Profile pic Leonardo" />
         </aside>

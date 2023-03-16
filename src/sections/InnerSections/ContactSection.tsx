@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import '../style.css';
+
 const footerLinks = [
   {
     name: 'LinkedIn!',
@@ -27,7 +29,7 @@ const ContactSection = () => {
   const [contactMessage, setContactMessage] = useState('');
 
   return (
-    <section className="px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0">
+    <section className="animation-fade  px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0">
       <h2 className="font2 text-white text-[18px] md:text-[38px] pt-[20px] md:py-[40px] font-bold text-center md:px-[150px]">
         mailto: <p className="inline text-my-pink-300 hover:cursor-default hover:text-my-pink-100 duration-150 text-[20px] md:text-[38px]">leonardo.diman@gmail.com</p>
       </h2>
