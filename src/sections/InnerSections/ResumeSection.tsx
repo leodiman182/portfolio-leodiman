@@ -55,9 +55,9 @@ const ProjectsSection = () => {
         </aside>
         <aside className="md:col-span-1 md:pr-[75px] text-center md:text-left">
           <p className="font1 text-white text-[18px] font-normal">
-            Ingressei na carreira de tecnologia por acaso e acabei me encantando. Após transição de carreira, tive a oportunidade e o privilégio de estagiar com um desenvolvedor sênior logo no começo dos meus estudos, que me abriu as portas e me ajudou tanto na parte técnica, quanto pessoalmente, me ajudando a me enxergar dentro dessa área.
+            Ingressei na carreira de tecnologia por acaso e acabei me encantando. Após transição de carreira, tive a oportunidade e o privilégio de estagiar com um desenvolvedor sênior logo no começo dos meus estudos, que me abriu as portas e me ensinou tanto na parte técnica, quanto pessoalmente, me ajudando a me enxergar dentro dessa área.
             <br /><br />
-            Pouco alguns meses depois, comecei meus estudos na Trybe, escola de desenvolvimento web, buscando ainda mais conhecimento. Em paralelo a isso, meu mentor oficializou a criação da empresa e acabou me contratando como desenvolvedor no processo.     
+            Alguns meses depois, comecei meus estudos na Trybe, escola de desenvolvimento web, buscando ainda mais conhecimento. Em paralelo a isso, meu mentor oficializou a criação da empresa e acabou me contratando como desenvolvedor no processo.     
             <br /><br />
             Trabalhei como desenvolvedor front-end na AGA Tecnologia - uma startup do interior de São Paulo - por quase dois anos, onde descobri uma paixão pelo design e criação de interfaces práticas e agradáveis. Para complementar meus conhecimentos, estou estudando UX Design em um curso oferecido pela Google, além dos estudos e aplicações constantes de novas ferramentas, como NextJS.
             <br /><br />
