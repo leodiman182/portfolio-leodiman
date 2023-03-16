@@ -28,6 +28,7 @@ const skills = [
   {
     skillArea: 'outras skills',
     array: [
+      'Figma',
       'Photoshop',
       'Premiere',
       'Reaper (DAW)',
