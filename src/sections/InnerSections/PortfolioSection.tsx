@@ -40,7 +40,7 @@ const projectsGallery = [
     ],
     link: '',
     color: 'project3',
-    alt: 'ao site da TeiaExp',
+    alt: 'o site da TeiaExp',
   },
   {
     name: "site | Armazém D'Vitto",
