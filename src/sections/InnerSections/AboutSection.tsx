@@ -92,7 +92,7 @@ const AboutSection = () => {
             Atualmente, atuo como desenvolvedor fullstack e descobri o prazer por aprender através do desenvolvimento. Aprecio cada pequena solução encontrada no dia a dia. 
             Em grande escala, sonho contribuir com projetos que impactem positivamente a vida de muitas pessoas e me tornar referência em alguma tecnologia.
             <br /><br />
-            Fora do trabalho, amo música (já fiz mais de 200 shows e lancei álbuns nas plataformas digitais), sou gamer (coleciono videogames e passo horas jogando, se puder) e fui co-host de um podcast descontraído (com a marca de 50 episódios no ar) chamado <a className='text-my-pink-300 md:text-white hover:text-my-pink-300 duration-150' target='_blank' href="https://www.youtube.com/watch?v=-f7KWPMzFTk&t=3s&ab_channel=DevChallenge" rel="noreferrer">Prosa Interior</a>
+            Fora do trabalho, amo música (já fiz mais de 200 shows e lancei álbuns nas plataformas digitais), sou gamer (coleciono videogames e passo horas jogando, se puder) e fui co-host de um podcast descontraído (com a marca de 50 episódios no ar) chamado <a className='text-my-pink-300 md:text-white hover:text-my-pink-300 duration-150' target='_blank' href="https://www.youtube.com/@ProsaInterior" rel="noreferrer">Prosa Interior</a>
             <br /><br />
             Amo viajar e conhecer pessoas de diferentes lugares, idiomas e culturas. Também amo estar em contato com a natureza, acampando ou explorando.
           </p>
