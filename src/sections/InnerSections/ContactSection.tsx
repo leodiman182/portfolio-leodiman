@@ -53,33 +53,24 @@ const ContactSection = () => {
             Vamos nos falar
           </h3>
           <form className="flex flex-col items-between justify-center md:w-[375px]">
-            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-name">
+            <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[16px] md:text-[20px]" htmlFor="contact-name">
               Nome
               <input
                 value={contactName}
                 onChange={(e) => setContactName(e.target.value)}
-                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
+                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] border-[1px] border-b-[4px] border-my-pink-300 focus:border-my-pink-100 focus:ring-my-pink-100"
                 type="text"
                 name="contact-name"
                 id="contact-name"
               />
             </label>
-            {/* <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
-              Email
-              <input
-                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
-                type="text"
-                name="contact-email"
-                id="contact-email"
-              />
-            </label> */}
             <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight  text-[16px] md:text-[20px]" htmlFor="contact-email">
               Mensagem
               <textarea
                 value={contactMessage}
                 onChange={(e) => setContactMessage(e.target.value)}
                 rows={4}
-                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] focus:outline-0 border-b-[4px] border-my-pink-100"
+                className="font-normal text-[16px] font1 py-[5px] my-[5px] text-gray-700 pl-[10px] border-[1px] border-b-[4px] border-my-pink-300 focus:border-my-pink-100 focus:ring-my-pink-100"
                 name="contact-email"
                 id="contact-email"
               />
