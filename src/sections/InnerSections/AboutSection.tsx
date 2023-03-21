@@ -1,61 +1,11 @@
 import { useCallback, useContext, useState } from 'react';
 import { PageContext } from '../../context/PageContext/Context';
-import profilePic from '../../assets/pictures/PERFIL1X1BRANCO.jpg';
-
-import image1 from '../../assets/pictures/album/1.jpg';
-import image2 from '../../assets/pictures/album/2.jpg';
-import image3 from '../../assets/pictures/album/3.jpg';
-import image4 from '../../assets/pictures/album/4.jpg';
-import image5 from '../../assets/pictures/album/5.jpg';
-import image7 from '../../assets/pictures/album/7.jpg';
-import image9 from '../../assets/pictures/album/9.jpg';
-import image10 from '../../assets/pictures/album/10.jpg';
-
 import { AiOutlineLoading } from "react-icons/ai";
 
-import '../style.css';
+import profilePic from '../../assets/pictures/PERFIL1X1BRANCO.jpg';
+import { galleryImages } from '../../assets/pictures/album/exports';
 
-const galleryImages = [
-  {
-    alt: 'Fazendo umas das coisas que mais amo - tocar!',
-    src: image10,
-    className: '',
-  },
-  {
-    alt: 'Prosa Interior - um podcast de Bariri para o mundo',
-    src: image1,
-    className: '',
-  },
-  {
-    alt: 'Evento de tecnologia no interior de São Paulo com a AGA!',
-    src: image3,
-    className: '',
-  }, 
-  {
-    alt: 'Cachoeira Monte Sião em Analândia - SP',
-    src: image5,
-    className: 'object-top',
-  },
-  {
-    alt: 'Viajando com minha mãe para o Chile',
-    src: image4,
-    className: '',
-  },
-  {
-    alt: 'Evento beneficente realizado pelo Prosa Interior',
-    src: image2,
-  },
-  {
-    alt: 'Intercâmbio de 2011 nos EUA',
-    src: image7,
-    className: '',
-  },
-  {
-    alt: 'Intercâmbio voluntário na República Tcheca em 2018',
-    src: image9,
-    className: 'object-top',
-  },
-];
+import '../style.css';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')

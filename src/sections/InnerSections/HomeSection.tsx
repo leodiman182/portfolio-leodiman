@@ -1,43 +1,6 @@
 import { useEffect, useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
 import '../../styles/styles.css'
-
-const DesktopTyping = () => {
-  return (
-    <TypeAnimation
-      sequence={[
-        'OLÁ!',
-        1000,
-        'MUITO PRAZER,',
-        2000,
-        'EU SOU O LÉO :)',
-        2500,
-      ]}
-      wrapper="div"
-      cursor={true}
-      repeat={0}
-      style={{ fontSize: '45px' }}
-    />
-  );
-};
-const MobileTyping = () => {
-  return (
-    <TypeAnimation
-      sequence={[
-        'OLÁ!',
-        1000,
-        'MUITO PRAZER,',
-        2000,
-        'EU SOU O LÉO :)',
-        2500,
-      ]}
-      wrapper="div"
-      cursor={true}
-      repeat={0}
-      style={{ fontSize: '25px' }}
-    />
-  );
-};
+import { MobileTyping, DesktopTyping } from '../../utils/TypingAnimation';
 
 const HomeSection = () => {
   const [showMessage, setShowMessage] = useState(false);
