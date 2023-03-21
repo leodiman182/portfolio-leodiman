@@ -6,6 +6,7 @@ import profilePic from '../../assets/pictures/PERFIL1X1BRANCO.jpg';
 import { galleryImages } from '../../assets/pictures/album/exports';
 
 import '../style.css';
+import MuiButton from '../../components/MUIButton';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -49,9 +50,7 @@ const AboutSection = () => {
         </aside>
       </article>
       <div className='w-full mx-auto flex flex-col items-center my-[50px]'>
-        <button onClick={() => setPage('contact')} className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black">
-          FALE COMIGO
-        </button>
+        <MuiButton text='Fale Comigo' onClick={() => setPage('contact')} />
       </div>
       <aside>
         <h3 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] md:py-[20px] font-bold text-center md:px-[150px]">

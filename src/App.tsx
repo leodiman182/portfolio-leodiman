@@ -7,7 +7,6 @@ import Footer from './sections/Footer';
 
 import { AiOutlineLoading } from "react-icons/ai";
 
-
 function App() {
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')

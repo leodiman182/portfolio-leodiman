@@ -49,7 +49,7 @@ const HomeSection = () => {
         </div>
         <article className='font2 w-[768px] mx-auto mt-[50px] mb-[120px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]'>
           Amante das artes, comunicador por natureza e solucionador de problemas
-        </article>      
+        </article>
       </section>    
     </>
   )

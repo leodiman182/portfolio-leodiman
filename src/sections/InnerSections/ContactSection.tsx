@@ -54,7 +54,7 @@ const ContactSection = () => {
               />
             </label>
           </form>
-        </div>        
+        </div>     
         <a target='_blank' className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[2px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black" href={`https://wa.me/5514981395514?text=Aqui%20é%20${contactName}!%20${contactMessage}`} rel="noreferrer">
           ENVIAR
         </a>
