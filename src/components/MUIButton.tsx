@@ -1,5 +1,4 @@
 import Button from '@mui/material/Button';
-import theme from '../theme';
 
 type MuiButtonProps = {
   text: string,
@@ -9,18 +8,9 @@ type MuiButtonProps = {
 const MuiButton = (props: MuiButtonProps) => {
   return (
     <Button
+      className='text-[20px] text-my-pink-300 border-my-pink-300 rounded-[0] border-[2px] hover:border-my-pink-100 hover:text-my-pink-100'
       onClick={props.onClick}
       variant="outlined"
-      sx={{
-        fontSize: '18px',
-        color: theme.palette.primary.main,
-        borderColor: theme.palette.primary.main,
-        borderRadius: '0px',
-        '&:hover, &.Mui-focusVisible': {
-          color: theme.palette.primary.light,
-          borderColor: theme.palette.primary.light
-        }
-      }}
     >
       { props.text }
     </Button>

@@ -7,7 +7,7 @@ const ContactSection = () => {
   const [contactMessage, setContactMessage] = useState('');
 
   return (
-    <section className="animation-fade  px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0">
+    <section className="animation-fade px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0">
       <h2 className="font2 text-white text-[18px] md:text-[38px] pt-[20px] md:py-[40px] font-bold text-center md:px-[150px]">
         mailto: <p className="inline text-my-pink-300 hover:cursor-default hover:text-my-pink-100 duration-150 text-[20px] md:text-[38px]">leonardo.diman@gmail.com</p>
       </h2>
@@ -30,7 +30,7 @@ const ContactSection = () => {
         <h3 className="text-white font1 text-[20px] md:text-[26px] pb-[20px] md:pb-0">
             Vamos nos falar
           </h3>
-          <form className="flex flex-col items-between justify-center md:w-[375px]">
+          <form autoComplete='off' className="flex flex-col items-between justify-center md:w-[375px]">
             <label className="text-white font1 pb-[10px] flex flex-col text-left font-extralight text-[16px] md:text-[20px]" htmlFor="contact-name">
               Nome
               <input
