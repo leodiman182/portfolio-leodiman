@@ -14,10 +14,12 @@ module.exports = {
         "project1": "#000228",
         "project2": "#f4623a",
         "project3": "#fcc293",
+        /* STACK COLORS */
         "react": "#61DAFB",
         "tailwind": "#06B6D4",
         "axios": "#5A29E4",
-        
+        "materialui": "#007FFF",
+        "node": "#339933",        
       }
     },
   },

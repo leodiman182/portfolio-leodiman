@@ -16,7 +16,7 @@ const projectsGallery = [
     link: 'https://usainbot.com/login',
     alt: 'a página administrativa do bot',
     stacks: [
-      'react', 'tailwind', 'axios'
+      'react', 'tailwind', 'axios', 'node'
     ]
   },
   {
@@ -28,7 +28,7 @@ const projectsGallery = [
     link: 'https://desafio-pluga-delta.vercel.app/',
     alt: 'a plataforma do desafio da Pluga',
     stacks: [
-      'react', 'tailwind', 'axios'
+      'react', 'tailwind', 'axios', 'materialui'
     ]
   },
   {
@@ -53,7 +53,7 @@ const projectsGallery = [
     color: 'project3',
     alt: 'o site da TeiaExp',
     stacks: [
-      'react', 'tailwind'
+      'react', 'tailwind', 'node'
     ]
   },
   {
