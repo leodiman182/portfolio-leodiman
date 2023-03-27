@@ -10,4 +10,29 @@ const TailwindIcon = () => {
   )
 }
 
-export { ReactIcon, TailwindIcon }
+const AxiosIcon = () => {
+  return (
+    <svg className="w-[40px] fill-my-pink-300 duration-150 hover:fill-axios" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Axios</title><path d="M11.0683 2.89968V22.2973l-2.11399 1.70265V7.8638H4.975l6.0933-4.96412zM14.93426 0v15.76724H19.025l-6.20044 5.08865V1.4689L14.93426 0z"/></svg>
+  )
+}
+
+const stackList = [
+  {
+    name: 'react',
+    icon: <ReactIcon />,
+    href: 'https://pt-br.reactjs.org/docs/getting-started.html',
+  },
+  {
+    name: 'axios',
+    icon: <AxiosIcon />,
+    href: 'https://axios-http.com/docs/intro',
+  },
+  {
+    name: 'tailwind',
+    icon: <TailwindIcon />,
+    href: 'https://tailwindcss.com/docs/installation',
+  },
+
+]
+
+export default stackList;

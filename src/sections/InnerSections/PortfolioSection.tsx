@@ -1,11 +1,12 @@
 import { useState, useContext, useEffect } from 'react';
 import { PageContext } from '../../context/PageContext/Context';
-import { ReactIcon, TailwindIcon } from '../../utils/stackIcons';
 
 import { AiOutlineCaretLeft } from "react-icons/ai";
 
 import projectsGallery from '../../utils/projectsGallery';
 import '../style.css'
+import stackList from '../../utils/stackIcons';
+import { Stack } from '@mui/system';
 
 
 const PortfolioSection = () => {
@@ -16,6 +17,7 @@ const PortfolioSection = () => {
     description: '',
     imageGallery: [''],
     link: '',
+    stacks: [''],
   });
 
   useEffect(() => {
@@ -23,7 +25,8 @@ const PortfolioSection = () => {
       name: '',
       description: '',
       imageGallery: [''],
-      link: ''
+      link: '',
+      stacks: []
     })
   }, [page])
 
@@ -50,6 +53,7 @@ const PortfolioSection = () => {
                     description: project.description,
                     imageGallery: project.imageGallery,
                     link: project.link,
+                    stacks: project.stacks
                   })} className={`w-full h-full opacity-0 hover:opacity-90 absolute flex flex-col justify-center items-center duration-150 px-[30px] text-center bg-my-pink-500 hover:cursor-pointer`}>
                     <h3 className='font2 text-white font-bold text-[28px] hover:cursor-default hover:cursor-pointer'>
                       Saiba mais sobre {project.alt}
@@ -68,7 +72,8 @@ const PortfolioSection = () => {
                 name: '',
                 description: '',
                 imageGallery: [''],
-                link: ''
+                link: '',
+                stacks: ['']
               })}>
                 <AiOutlineCaretLeft className='text-my-pink-300 text-[30px] md:text-[50px] hover:scale-125 duration-150' />
               </button>
@@ -94,18 +99,21 @@ const PortfolioSection = () => {
               <h4 className="uppercase font1 md:text-[20px] text-my-pink-300 mt-[20px]">
                 Stacks utilizadas
               </h4>
-              <div className="flex flex-row items-center justify-center md:justify-between w-full md:w-[100px] h-[45px] mt-[10px] mb-[45px]">
-                <a className='mx-[4px] md:mx-0' href="https://pt-br.reactjs.org/docs/getting-started.html" target='_blank' rel="noreferrer">
-                  <ReactIcon />
-                </a>
-                <a className='mx-[4px] md:mx-0' href="https://tailwindcss.com/docs/installation" target='_blank' rel="noreferrer">
-                  <TailwindIcon />
-                </a>
-              </div>
+              <Stack className='py-[20px]' direction='row' spacing={4}>
+                {
+                  stackList
+                  .filter(el => selectedProject.stacks.includes(el.name))
+                  .map(stack => (
+                    <a className='mx-[4px] md:mx-0' href={ stack.href } target='_blank' rel="noreferrer">
+                      { stack.icon }
+                    </a>
+                  ))
+                }
+              </Stack>
             </div>
             {
               selectedProject.link !== '' ? (
-                <a target='_blank' className='font1 uppercase text-my-pink-300 text-[20px] mt-[15px] mb-[50px] hover:text-black hover:bg-my-pink-100 duration-150' href={ selectedProject.link } rel="noreferrer">
+                <a target='_blank' className='font1 uppercase text-my-pink-300 text-[18px] mt-[50px] mb-[50px] hover:text-black hover:bg-my-pink-100 duration-150' href={ selectedProject.link } rel="noreferrer">
                   Visite o site no ar!  
                 </a>              
               ) : (

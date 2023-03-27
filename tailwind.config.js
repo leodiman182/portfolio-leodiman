@@ -16,6 +16,7 @@ module.exports = {
         "project3": "#fcc293",
         "react": "#61DAFB",
         "tailwind": "#06B6D4",
+        "axios": "#5A29E4",
         
       }
     },

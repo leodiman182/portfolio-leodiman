@@ -1,5 +1,6 @@
 import { aga1, aga2, aga3, aga4, aga5, aga6, aga7 } from '../assets/portfolio/aga-site/exports';
 import { dv1, dv2, dv3, } from '../assets/portfolio/dvitto/exports';
+import { pluga1, pluga2, pluga3 } from '../assets/portfolio/pluga/exports';
 import { land1 , land2, land3 } from '../assets/portfolio/landing-bot/exports';
 import { mu1, mu2, mu3, mu4, mu5, mu6, mu7 } from '../assets/portfolio/mercado-unido/exports';
 import { teia1, teia2, teia3, teia4, teia5, teia6, teia7, teia8, teia9 } from '../assets/portfolio/teia-exp/exports';
@@ -14,6 +15,21 @@ const projectsGallery = [
     ],
     link: 'https://usainbot.com/login',
     alt: 'a página administrativa do bot',
+    stacks: [
+      'react', 'tailwind', 'axios'
+    ]
+  },
+  {
+    name: 'Site | desafio pluga',
+    description: 'Esse site foi o desafio de uma prova técnica para a empresa Pluga. Utilizando uma lista fornecida através de uma url, o objetivo era criar uma interface que renderizasse as ferramentas da lista baseado em um layout sugerido. Para a requisição, foi usado Axios. Outro requisito foi o componente de paginação e um modal que mostrasse as três últimas ferramentas selecionadas. Ambos os botões foram ideia minha pensando em melhorar o design da UX.',
+    imageGallery: [
+      pluga1, pluga2, pluga3
+    ],
+    link: 'https://desafio-pluga-delta.vercel.app/',
+    alt: 'a plataforma do desafio da Pluga',
+    stacks: [
+      'react', 'tailwind', 'axios'
+    ]
   },
   {
     name: 'site | mercado unido',
@@ -23,6 +39,9 @@ const projectsGallery = [
     ],
     link: 'https://app-mercado-unido.web.app/',
     alt: 'a plataforma em desenvolvimento do Mercado Unido',
+    stacks: [
+      'react', 'tailwind'
+    ]
   },
   {
     name: 'site | teia exp',
@@ -33,6 +52,9 @@ const projectsGallery = [
     link: '',
     color: 'project3',
     alt: 'o site da TeiaExp',
+    stacks: [
+      'react', 'tailwind'
+    ]
   },
   {
     name: "site | Armazém D'Vitto",
@@ -44,6 +66,9 @@ const projectsGallery = [
     link: 'https://armazemdvitto.com.br/',
     color: 'project2',
     alt: "o site do D'Vitto",
+    stacks: [
+      'react', 'tailwind'
+    ]
   },
   {
     name: 'landing page | usain-bot',
@@ -54,6 +79,9 @@ const projectsGallery = [
     ],
     link: '',
     alt: 'a landing page do usain-bot',
+    stacks: [
+      'react', 'tailwind'
+    ]
   },
   {
     name: 'site | AGA Tecnologia',
@@ -65,6 +93,9 @@ const projectsGallery = [
     link: 'https://agatecnologia.com/',
     color: 'project1',
     alt: 'o site da AGA',
+    stacks: [
+      'react', 'tailwind'
+    ]
   },
 ];
 
