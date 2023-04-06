@@ -31,7 +31,7 @@ const PortfolioSection = () => {
   }, [page])
 
   return (
-    <section className="pb-[100px]">      
+    <section data-testid="portfolio-section" className="pb-[100px]">      
       {
         selectedProject.name === '' ? (
           <>
@@ -43,8 +43,8 @@ const PortfolioSection = () => {
             </h2>
             <div className='animation-fade pt-[50px] grid md:grid-cols-2 w-full xl:w-[1000px] gap-y-[100px] md:gap-y-[75px] gap-x-[40px]'>
               {
-                projectsGallery.map(project => (
-                <div className='col-span-1 relative w-full h-[200px] md:h-[275px]'>
+                projectsGallery.map((project, index) => (
+                <div key={index} className='col-span-1 relative w-full h-[200px] md:h-[275px]'>
                   <h3 className='font1 text-white text-[20px] uppercase pb-[10px]'>
                     { project.name }
                   </h3>

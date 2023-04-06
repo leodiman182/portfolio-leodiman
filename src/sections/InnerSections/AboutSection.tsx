@@ -18,7 +18,7 @@ const AboutSection = () => {
   const onLoad = useCallback(() =>  setLoaded(true), []);
 
   return (
-    <section className='pb-[50px] md:pb-0'>
+    <section data-testid="about-section" className='pb-[50px] md:pb-0'>
       <h2 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] font-bold text-center md:px-[150px]">
         Buscando a presença, comunicação e arte nas coisas mais simples da vida
       </h2>

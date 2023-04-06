@@ -1,12 +1,12 @@
 import '../styles/styles.css';
-import Links from '../utils/Links'
+import Links from '../utils/Links';
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
 
   return (
-    <footer className="w-full max-w-[1024px]">
+    <footer data-testid="footer-element" className="w-full max-w-[1024px]">
       <article className="flex flex-col md:flex-row w-full items-center justify-between md:pt-[35px] pb-[75px] md:pl-[40px] xl:pl-0">
         <div className="font1 uppercase font-bold text-my-pink-300">
           © {year} Leonardo Diman

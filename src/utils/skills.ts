@@ -4,11 +4,13 @@ const skills = [
     array: [
       'ReactJS',
       'React Router',
-      'TailwindCSS',
-      'VueJS',
-      'Bootstrap',
+      'Jest',
       'RTL',
+      'Next.js',
+      'TailwindCSS',
+      'Bootstrap',
       'CSS',
+      'VueJS',
     ]
   },
   {
@@ -29,10 +31,10 @@ const skills = [
     skillArea: 'outras skills',
     array: [
       'UX Design',
-      'Adobe XD',
-      'Figma',
       'Photoshop',
       'Premiere',
+      'Adobe XD',
+      'Figma',
       'Reaper (DAW)',
     ]
   },

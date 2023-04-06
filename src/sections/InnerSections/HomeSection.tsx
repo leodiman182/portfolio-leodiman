@@ -11,7 +11,7 @@ const HomeSection = () => {
   return (
     <>
       {/* MOBILE */}
-      <section className="flex flex-col md:hidden items-center pt-[40px] md:pt-0">
+      <section data-testid="home-section-mobile" className="flex flex-col md:hidden items-center pt-[40px] md:pt-0">
         <div className='flex flex-col items-center'>
           <h2 className="font1 text-my-pink-300 text-center">
             <MobileTyping />
@@ -32,7 +32,7 @@ const HomeSection = () => {
       </section>
 
       {/* DESKTOP */}
-      <section className="hidden px-[20px] md:flex flex-col items-center pt-[40px] md:pt-0">
+      <section data-testid="home-section-desktop" className="hidden px-[20px] md:flex flex-col items-center pt-[40px] md:pt-0">
         <div className='flex flex-col items-end'>
           <h2 className="font1 text-my-pink-300 text-[28px] text-left">
             <DesktopTyping />
