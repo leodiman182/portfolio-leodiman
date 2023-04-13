@@ -7,6 +7,9 @@ import projectsGallery from '../../utils/projectsGallery';
 import '../style.css'
 import stackList from '../../utils/stackIcons';
 import { Stack } from '@mui/system';
+import { Button } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import theme from '../../theme';
 
 
 const PortfolioSection = () => {
@@ -18,6 +21,7 @@ const PortfolioSection = () => {
     imageGallery: [''],
     link: '',
     stacks: [''],
+    github: ''
   });
 
   useEffect(() => {
@@ -26,7 +30,8 @@ const PortfolioSection = () => {
       description: '',
       imageGallery: [''],
       link: '',
-      stacks: []
+      stacks: [],
+      github: ''
     })
   }, [page])
 
@@ -53,7 +58,8 @@ const PortfolioSection = () => {
                     description: project.description,
                     imageGallery: project.imageGallery,
                     link: project.link,
-                    stacks: project.stacks
+                    stacks: project.stacks,
+                    github: project.github
                   })} className={`w-full h-full opacity-0 hover:opacity-90 absolute flex flex-col justify-center items-center duration-150 px-[30px] text-center bg-my-pink-500 hover:cursor-pointer`}>
                     <h3 className='font2 text-white font-bold text-[28px] hover:cursor-default hover:cursor-pointer'>
                       Saiba mais sobre {project.alt}
@@ -73,7 +79,8 @@ const PortfolioSection = () => {
                 description: '',
                 imageGallery: [''],
                 link: '',
-                stacks: ['']
+                stacks: [''],
+                github: ''
               })}>
                 <AiOutlineCaretLeft className='text-my-pink-300 text-[30px] md:text-[50px] hover:scale-125 duration-150' />
               </button>
@@ -82,11 +89,34 @@ const PortfolioSection = () => {
               </h3>
             </div>
 
+            {
+              selectedProject.github !== '' && (
+                <a href={ selectedProject.github } target='_blank' rel="noreferrer">
+                  <Button
+                  sx={{
+                    fontSize: '20px',
+                    color: 'black',
+                    backgroundColor: theme.palette.primary.main,
+                    borderColor: theme.palette.primary.main,
+                    borderRadius: '0px',
+                    borderWidth: '2px',
+                    '&:hover, &.Mui-focusVisible': {
+                      backgroundColor: theme.palette.primary.light,
+                      borderWidth: '2px',
+                      color: 'black',
+                      borderColor: theme.palette.primary.light
+                    }
+                  }} variant="contained" startIcon={<GitHubIcon />}>
+                    Confira o repositório                
+                  </Button>               
+                </a>
+              )
+            }
 
             <div className={`w-full h-[500px] flex overflow-x-scroll hideSB`}>
                 {
-                  selectedProject.imageGallery.map(image => (
-                    <div className='min-w-[800px] max-h-[500px] ml-[2rem] flex flex-col items-center justify-center'>
+                  selectedProject.imageGallery.map((image, index) => (
+                    <div key={index} className='min-w-[800px] max-h-[500px] ml-[2rem] flex flex-col items-center justify-center'>
                       <img className='w-[800px] object-cover' src={ image } alt={ selectedProject.name } />
                     </div>
                   ))
@@ -103,8 +133,8 @@ const PortfolioSection = () => {
                 {
                   stackList
                   .filter(el => selectedProject.stacks.includes(el.name))
-                  .map(stack => (
-                    <a className='mx-[4px] md:mx-0' href={ stack.href } target='_blank' rel="noreferrer">
+                  .map((stack, index) => (
+                    <a key={index} className='mx-[4px] md:mx-0' href={ stack.href } target='_blank' rel="noreferrer">
                       { stack.icon }
                     </a>
                   ))

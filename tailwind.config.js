@@ -19,7 +19,8 @@ module.exports = {
         "tailwind": "#06B6D4",
         "axios": "#5A29E4",
         "materialui": "#007FFF",
-        "node": "#339933",        
+        "node": "#339933",
+        "next": "#fff",
       }
     },
   },

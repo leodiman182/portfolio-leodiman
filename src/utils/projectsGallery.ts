@@ -5,6 +5,7 @@ import { land1 , land2, land3 } from '../assets/portfolio/landing-bot/exports';
 import { mu1, mu2, mu3, mu4, mu5, mu6, mu7 } from '../assets/portfolio/mercado-unido/exports';
 import { teia1, teia2, teia3, teia4, teia5, teia6, teia7, teia8, teia9 } from '../assets/portfolio/teia-exp/exports';
 import { bot1, bot2, bot3, bot4, bot5 } from '../assets/portfolio/usain-bot/exports';
+import { events1, events2, events3, events4, events5, events6, events7 } from '../assets/portfolio/next-events-app/exports';
 
 const projectsGallery = [
   {
@@ -15,9 +16,10 @@ const projectsGallery = [
     ],
     link: 'https://usainbot.com/login',
     alt: 'a página administrativa do bot',
+    github: 'https://github.com/leodiman182/adm-usain-bot',
     stacks: [
       'react', 'tailwind', 'axios', 'node'
-    ]
+    ],
   },
   {
     name: 'Site | desafio pluga',
@@ -27,6 +29,7 @@ const projectsGallery = [
     ],
     link: 'https://desafio-pluga-delta.vercel.app/',
     alt: 'a plataforma do desafio da Pluga',
+    github: 'https://github.com/leodiman182/desafio-pluga',
     stacks: [
       'react', 'tailwind', 'axios', 'materialui'
     ]
@@ -39,6 +42,7 @@ const projectsGallery = [
     ],
     link: 'https://app-mercado-unido.web.app/',
     alt: 'a plataforma em desenvolvimento do Mercado Unido',
+    github: '',
     stacks: [
       'react', 'tailwind'
     ]
@@ -50,10 +54,24 @@ const projectsGallery = [
       teia1, teia2, teia3, teia4, teia5, teia6, teia7, teia8, teia9,
     ],
     link: '',
-    color: 'project3',
     alt: 'o site da TeiaExp',
+    github: 'https://github.com/leodiman182/frontend-teia',
     stacks: [
       'react', 'tailwind', 'node'
+    ]
+  },
+  {
+    name: "estudo | NEXT.js",
+    description: "Esse website foi desenvolvido com o intuito de aprender mais na prática sobre as aplicações do Next.js. Nele, foi possível utilizar o sistema de rotas próprio do Next, bem como a criação de rotas estáticas a partir de propriedades passados. Além disso, pude entender os conceitos de SSR (Server Side Rendering) e CSR (Client Side Rendering)a partir da criação de páginas estáticas e utilizando propriedades previamente fornecidas. Além da consulta e interação mais direta com um back-end direto no front. O layout e o design são simples, mas é completamente responsivo.",
+    singlePage: true,
+    imageGallery: [
+      events1, events2, events3, events4, events5, events6, events7
+    ],
+    link: '',
+    alt: "o estudo em Next.js",
+    github: 'https://github.com/leodiman182/events-app',
+    stacks: [
+      'next'
     ]
   },
   {
@@ -64,8 +82,8 @@ const projectsGallery = [
       dv1, dv2, dv3, 
     ],
     link: 'https://armazemdvitto.com.br/',
-    color: 'project2',
     alt: "o site do D'Vitto",
+    github: 'https://github.com/leodiman182/armazem-dvitto',
     stacks: [
       'react', 'tailwind'
     ]
@@ -79,6 +97,7 @@ const projectsGallery = [
     ],
     link: '',
     alt: 'a landing page do usain-bot',
+    github: '',
     stacks: [
       'react', 'tailwind'
     ]
@@ -91,8 +110,8 @@ const projectsGallery = [
       aga1, aga2, aga3, aga4, aga5, aga6, aga7
     ],
     link: 'https://agatecnologia.com/',
-    color: 'project1',
     alt: 'o site da AGA',
+    github: 'https://github.com/leodiman182/site-aga-tecnologia',
     stacks: [
       'react', 'tailwind'
     ]
