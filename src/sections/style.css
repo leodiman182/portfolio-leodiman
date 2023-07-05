@@ -24,9 +24,9 @@
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
 }
 
@@ -42,10 +42,18 @@
     transform: rotate(360deg);
   }
 
-  0% { color: #6E274C; }
-  25% { color: #D64E95; }
-  50% { color: #FA5AAD; }
-  100% { color: #D64E95; }
+  0% {
+    color: #6e274c;
+  }
+  25% {
+    color: #d64e95;
+  }
+  50% {
+    color: #fa5aad;
+  }
+  100% {
+    color: #d64e95;
+  }
 }
 
 @keyframes rotating {
@@ -64,9 +72,15 @@
     transform: rotate(360deg);
   }
 
-  0% { color: #6E274C; }
-  50% { color: #FA5AAD; }
-  100% { color: #6E274C; }
+  0% {
+    color: #6e274c;
+  }
+  50% {
+    color: #fa5aad;
+  }
+  100% {
+    color: #6e274c;
+  }
 }
 
 .rotating {

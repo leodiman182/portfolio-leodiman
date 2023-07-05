@@ -1,14 +1,8 @@
-import { useEffect, useState } from 'react';
 import '../../styles/styles.css';
 import GlitchAnimation from '../../utils/GlitchAnimation1';
 import GlitchAnimation2 from '../../utils/GlitchAnimation2';
 
 const HomeSection = () => {
-  const [showMessage, setShowMessage] = useState(false);
-  useEffect(() => {
-    setInterval(() => setShowMessage(true), 6500);
-  }, []);
-
   return (
     <>
       {/* MOBILE */}
@@ -18,11 +12,7 @@ const HomeSection = () => {
       >
         <div className="flex flex-col items-center">
           <GlitchAnimation />
-          {showMessage ? (
-            <GlitchAnimation2 />
-          ) : (
-            <div className="h-[24px]"></div>
-          )}
+          <GlitchAnimation2 />
         </div>
         <article className="font2 mx-auto mt-[50px] mb-[90px] text-white text-[28px] text-center font-medium">
           Amante das artes, comunicador por natureza e solucionador de problemas
@@ -36,12 +26,7 @@ const HomeSection = () => {
       >
         <div className="flex flex-col items-end">
           <GlitchAnimation />
-
-          {showMessage ? (
-            <GlitchAnimation2 />
-          ) : (
-            <div className="h-[30px]"></div>
-          )}
+          <GlitchAnimation2 />
         </div>
         <article className="font2 w-[768px] mx-auto mt-[50px] mb-[120px] text-white px-[40px] text-[50px] text-center font-medium leading-[4rem]">
           Amante das artes, comunicador por natureza e solucionador de problemas
