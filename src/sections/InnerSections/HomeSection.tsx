@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../styles/styles.css';
-import GlitchAnimation from '../../utils/GlitchAnimation';
+import GlitchAnimation from '../../utils/GlitchAnimation1';
+import GlitchAnimation2 from '../../utils/GlitchAnimation2';
 
 const HomeSection = () => {
   const [showMessage, setShowMessage] = useState(false);
@@ -18,9 +19,7 @@ const HomeSection = () => {
         <div className="flex flex-col items-center">
           <GlitchAnimation />
           {showMessage ? (
-            <h2 className="font1 text-my-pink-300 text-[16px] text-center fadeIn">
-              Desenvolvedor Fullstack
-            </h2>
+            <GlitchAnimation2 />
           ) : (
             <div className="h-[24px]"></div>
           )}
@@ -39,9 +38,7 @@ const HomeSection = () => {
           <GlitchAnimation />
 
           {showMessage ? (
-            <h2 className="font1 text-my-pink-300 text-[20px] text-left fadeIn mr-[10px]">
-              Desenvolvedor Fullstack
-            </h2>
+            <GlitchAnimation2 />
           ) : (
             <div className="h-[30px]"></div>
           )}
