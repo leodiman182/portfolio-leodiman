@@ -1,23 +1,23 @@
 import React, { useContext, useEffect } from 'react';
 import { PageContext } from '../context/PageContext/Context';
 import useSound from 'use-sound';
-import switchSound from '../sounds/lightswitch.mp3';
-import menuSound from '../sounds/menu.mp3';
+import logoSound from '../sounds/logo-click.mp3';
+import menuItemSound from '../sounds/menu-item-click.mp3';
 
 const Logo = () => {
   const { page, setPage } = useContext(PageContext);
-  const [play] = useSound(switchSound, { volume: 1 });
-  const [play2] = useSound(menuSound, { volume: 0.35 });
+  const [playLogoSound] = useSound(logoSound, { volume: 1 });
+  const [playMenuItemSound] = useSound(menuItemSound, { volume: 0.35 });
 
   useEffect(() => {
-    page !== 'home' ? play2() : play();
+    page !== 'home' ? playMenuItemSound() : playLogoSound();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   return (
     <h2
       onClick={() => setPage('home')}
-      className="text-white text-[25px] md:text-[50px] font1 mb-[5px] md:mb-[30px] hover:cursor-pointer duration-150"
+      className="text-white text-[35px] md:text-[50px] font1 mb-[5px] md:mb-[30px] hover:cursor-pointer duration-150"
     >
       &nbsp;
       <span

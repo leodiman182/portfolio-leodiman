@@ -5,10 +5,9 @@ import { AiOutlineLoading } from 'react-icons/ai';
 import profilePic from '../../assets/pictures/PERFIL1X1BRANCO.jpg';
 import { galleryImages } from '../../assets/pictures/album/exports';
 
-import '../style.css';
-import MuiButton from '../../components/MUIButton';
 import useSound from 'use-sound';
 import hoverSound from '../../sounds/hover.mp3';
+import '../style.css';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -18,7 +17,7 @@ const AboutSection = () => {
   const { setPage } = useContext(PageContext);
   const [loaded, setLoaded] = useState(false);
   const onLoad = useCallback(() => setLoaded(true), []);
-  const [play] = useSound(hoverSound);
+  const [playHoverSound] = useSound(hoverSound);
 
   return (
     <section data-testid="about-section" className="pb-[50px] md:pb-0">
@@ -63,7 +62,7 @@ const AboutSection = () => {
             passo horas jogando, se puder) e fui co-host de um podcast
             descontraído (com a marca de 50 episódios no ar) chamado{' '}
             <a
-              className="text-my-pink-300 md:text-white hover:text-my-pink-300 duration-150"
+              className="text-my-pink-300 md:text-white hover:text-my-pink-300 duration-150 font-bold"
               target="_blank"
               href="https://www.youtube.com/@ProsaInterior"
               rel="noreferrer"
@@ -79,7 +78,12 @@ const AboutSection = () => {
         </aside>
       </article>
       <div className="w-full mx-auto flex flex-col items-center my-[50px]">
-        <MuiButton text="Fale Comigo" onClick={() => setPage('contact')} />
+        <button
+          onClick={() => setPage('contact')}
+          className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[10px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black uppercase"
+        >
+          fale comigo
+        </button>
       </div>
       <aside>
         <h3 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] md:py-[20px] font-bold text-center md:px-[150px]">
@@ -88,7 +92,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 w-full xl:w-[1000px] gap-[30px]">
           {galleryImages.map((img, index) => (
             <div
-              onMouseEnter={() => play()}
+              onMouseEnter={() => playHoverSound()}
               key={index}
               className="col-span-1 relative w-full h-[300px]"
             >

@@ -14,7 +14,7 @@ const HomeSection = () => {
           <GlitchAnimation />
           <GlitchAnimation2 />
         </div>
-        <article className="font2 mx-auto mt-[50px] mb-[90px] text-white text-[28px] text-center font-medium">
+        <article className="font2 mx-auto mt-[50px] mb-[90px] text-white text-[28px] text-center font-medium px-[16px]">
           Amante das artes, comunicador por natureza e solucionador de problemas
         </article>
       </section>
