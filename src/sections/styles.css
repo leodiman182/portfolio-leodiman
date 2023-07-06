@@ -90,11 +90,3 @@
   -o-animation: rotating 1s linear infinite;
   animation: rotating 1s linear infinite;
 }
-
-/* p {
-  animation: color-change 1s infinite;
-}
-
-@keyframes color-change {
-  
-} */

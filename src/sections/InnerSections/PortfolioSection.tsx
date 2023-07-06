@@ -4,7 +4,7 @@ import { PageContext } from '../../context/PageContext/Context';
 import { AiOutlineCaretLeft } from 'react-icons/ai';
 
 import projectsGallery from '../../utils/projectsGallery';
-import '../style.css';
+import '../styles.css';
 import stackList from '../../utils/stackIcons';
 import { Stack } from '@mui/system';
 import { Button } from '@mui/material';

@@ -1,4 +1,5 @@
 import Button from '../../components/Button';
+import CoffeeMachine from '../../components/CoffeeMachine';
 import skills from '../../utils/skills';
 
 const ProjectsSection = () => {
@@ -17,7 +18,7 @@ const ProjectsSection = () => {
           </a>
         </div>
       </aside>
-      <article className="animation-fade md:grid md:grid-cols-2 my-[40px] md:my-[100px] px-[12px] md:px-0">
+      <article className="animation-fade md:grid md:grid-cols-2 my-[40px] md:mt-[100px] md:mb-[50px] px-[12px] md:px-0">
         <aside className="md:col-span-1 text-white">
           <h2 className="font2 text-my-pink-300 text-[30px] font-bold text-center md:text-left md:px-[75px] py-[18px] md:py-0">
             Bio
@@ -57,6 +58,9 @@ const ProjectsSection = () => {
           </p>
         </aside>
       </article>
+      <section className="relative h-[200px]">
+        <CoffeeMachine />
+      </section>
       <article className="md:grid md:grid-cols-2 my-[40px] md:my-[100px] px-[12px] md:px-0">
         <aside className="col-span-1 text-white ">
           <h2 className="font2 text-my-pink-300 text-[30px] font-bold text-center md:text-left md:px-[75px] py-[24px] md:py-0">
@@ -65,18 +69,21 @@ const ProjectsSection = () => {
         </aside>
         <aside className="col-span-1 md:grid md:grid-cols-3">
           {skills.map((el) => (
-            <div className="flex flex-row md:flex-col justify-between md:justify-start row-span-1 md:col-span-1 mb-[30px] md:mb-0">
-              <h4 className="uppercase font1 md:text-[20px] text-my-pink-300">
-                {el.skillArea}
-              </h4>
-              <ul className="text-white font1 md:mt-[20px]">
-                {el.array.map((skill) => (
-                  <li className="pb-[5px] text-[18px] text-right md:text-left">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <>
+              <div className="flex flex-row md:flex-col justify-between md:justify-start row-span-1 md:col-span-1 mb-[30px] md:mb-0">
+                <h4 className="uppercase font1 md:text-[20px] text-my-pink-300">
+                  {el.skillArea}
+                </h4>
+                <ul className="text-white font1 md:mt-[20px]">
+                  {el.array.map((skill) => (
+                    <li className="pb-[5px] text-[18px] text-right md:text-left">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-my-pink-300 h-[1px] w-full my-[25px] md:hidden" />
+            </>
           ))}
         </aside>
       </article>

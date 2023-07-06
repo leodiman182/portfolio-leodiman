@@ -7,7 +7,8 @@ import { galleryImages } from '../../assets/pictures/album/exports';
 
 import useSound from 'use-sound';
 import hoverSound from '../../sounds/hover.mp3';
-import '../style.css';
+import '../styles.css';
+import './styles/about.css';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -38,7 +39,7 @@ const AboutSection = () => {
             onLoad={() => onLoad()}
             className={classNames(
               loaded
-                ? 'visible p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 md:mt-[40px]'
+                ? 'visible p-[8px] bg-my-pink-300 hover:bg-my-pink-100 w-[250px] rounded-full mx-auto duration-150 md:mt-[40px] avatar-float'
                 : 'invisible'
             )}
             src={profilePic}

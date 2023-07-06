@@ -10,7 +10,7 @@
 
 .glitch {
   position: relative;
-  font-size: 58px;
+  font-size: 32px;
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 3px;
@@ -172,5 +172,11 @@
   }
   100% {
     clip: rect(67px, 9999px, 122px, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .glitch {
+    font-size: 50px;
   }
 }
