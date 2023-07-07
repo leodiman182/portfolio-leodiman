@@ -60,12 +60,12 @@ const HomeSection = () => {
         </div>
         <article className="mb-[20px] relative">
           {showMessage ? (
-            <h3 className="text-flicker-in-glow font2 mx-auto text-white text-[32px] text-center font-medium px-[8px]">
+            <h3 className="text-flicker-in-glow font-neon mx-auto text-white text-[32px] text-center font-medium px-[8px]">
               Amante das artes, comunicador por natureza e solucionador de
               problemas
             </h3>
           ) : (
-            <h3 className="font2 mx-auto text-black text-[32px] text-center font-medium px-[8px]">
+            <h3 className="font-neon mx-auto text-black text-[32px] text-center font-medium px-[8px]">
               Amante das artes, comunicador por natureza e solucionador de
               problemas
             </h3>
@@ -103,12 +103,12 @@ const HomeSection = () => {
         </div>
         <article className="relative">
           {showMessage ? (
-            <h3 className="text-flicker-in-glow font2 w-[768px] mx-auto text-white px-[28px] text-[50px] text-center font-medium leading-[4rem] ">
+            <h3 className="text-flicker-in-glow font-neon w-[768px] mx-auto text-white px-[28px] text-[50px] text-center font-medium leading-[4rem] ">
               Amante das artes, comunicador por natureza e solucionador de
               problemas
             </h3>
           ) : (
-            <h3 className="font2 w-[768px] mx-auto text-black px-[28px] text-[50px] text-center font-medium leading-[4rem] ">
+            <h3 className="font-neon w-[768px] mx-auto text-black px-[28px] text-[50px] text-center font-medium leading-[4rem] ">
               Amante das artes, comunicador por natureza e solucionador de
               problemas
             </h3>
