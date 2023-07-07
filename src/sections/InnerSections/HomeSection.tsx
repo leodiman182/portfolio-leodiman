@@ -79,6 +79,16 @@ const HomeSection = () => {
         className="hidden px-[20px] md:flex md:flex-col md:items-center md:justify-evenly h-full"
       >
         <div className="flex flex-col relative">
+          <GlitchAnimation />
+          <GlitchAnimation2 />
+          <div className="flex flex-row items-center justify-around mt-[20px]">
+            <SpecialButton />
+            {isBugFixed ? (
+              <span className="green-neon ml-[4px] text-[20px]">fixed</span>
+            ) : (
+              <span className="red-neon ml-[4px] text-[20px]">not fixed</span>
+            )}
+          </div>
           <PowerSwitch
             onClick={() => {
               if (!showMessage) {
@@ -90,11 +100,6 @@ const HomeSection = () => {
               setShowMessage(!showMessage);
             }}
           />
-          <GlitchAnimation />
-          <GlitchAnimation2 />
-        </div>
-        <div>
-          <SpecialButton />
         </div>
         <article className="relative">
           {showMessage ? (

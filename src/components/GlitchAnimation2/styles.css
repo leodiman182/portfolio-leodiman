@@ -62,3 +62,13 @@
     transform: skewX(10deg) skewY(-10deg);
   }
 }
+
+@media (min-width: 768px) {
+  .glitch2 {
+    font-size: 24px;
+  }
+
+  .fixed2 {
+    font-size: 24px;
+  }
+}
