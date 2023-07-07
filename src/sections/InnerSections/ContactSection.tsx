@@ -9,7 +9,7 @@ const ContactSection = () => {
   return (
     <section
       data-testid="contact-section"
-      className="animation-fade px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0"
+      className="px-[20px] text-center flex flex-col items-center pb-[50px] md:pb-0"
     >
       <h2 className="font2 text-white text-[18px] md:text-[38px] pt-[20px] md:py-[40px] font-bold text-center md:px-[150px]">
         mailto:{' '}

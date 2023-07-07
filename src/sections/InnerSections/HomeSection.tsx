@@ -7,10 +7,13 @@ import turnOnSound from '../../sounds/menu-item-click.mp3';
 import turnOffSound from '../../sounds/close-menu.mp3';
 import '../../styles/styles.css';
 import './styles/home.css';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import PowerSwitch from '../../components/PowerSwitch';
+import SpecialButton from '../../components/SpecialButton';
+import { BugContext } from '../../context/BugContext/Context';
 
 const HomeSection = () => {
+  const { isBugFixed } = useContext(BugContext);
   const [playGlitchSound, { stop }] = useSound(homeGlitchSound, {
     volume: 0.1,
     interrupt: true,
@@ -30,9 +33,19 @@ const HomeSection = () => {
       {/* MOBILE */}
       <section
         data-testid="home-section-mobile"
-        className="flex flex-col md:hidden items-center justify-evenly h-full mt-[45px]"
+        className="flex flex-col md:hidden items-center justify-evenly h-full"
       >
         <div className="flex flex-col relative">
+          <GlitchAnimation />
+          <GlitchAnimation2 />
+          <div className="flex flex-row items-center justify-around mt-[20px]">
+            <SpecialButton />
+            {isBugFixed ? (
+              <span className="green-neon ml-[4px] text-[20px]">fixed</span>
+            ) : (
+              <span className="red-neon ml-[4px] text-[20px]">not fixed</span>
+            )}
+          </div>
           <PowerSwitch
             onClick={() => {
               if (!showMessage) {
@@ -44,10 +57,8 @@ const HomeSection = () => {
               setShowMessage(!showMessage);
             }}
           />
-          <GlitchAnimation />
-          <GlitchAnimation2 />
         </div>
-        <article className="my-[50px] relative">
+        <article className="mb-[20px] relative">
           {showMessage ? (
             <h3 className="text-flicker-in-glow font2 mx-auto text-white text-[32px] text-center font-medium px-[8px]">
               Amante das artes, comunicador por natureza e solucionador de
@@ -81,6 +92,9 @@ const HomeSection = () => {
           />
           <GlitchAnimation />
           <GlitchAnimation2 />
+        </div>
+        <div>
+          <SpecialButton />
         </div>
         <article className="relative">
           {showMessage ? (

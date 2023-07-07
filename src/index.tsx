@@ -4,23 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PageProvider from './context/PageContext/Provider';
-import LanguageProvider from './context/LanguageContext/Provider';
+import BugProvider from './context/BugContext/Provider';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <LanguageProvider>
+    <BugProvider>
       <PageProvider>
         <App />
       </PageProvider>
-    </LanguageProvider>
+    </BugProvider>
   </React.StrictMode>
 );
-
 
 serviceWorkerRegistration.register();
 

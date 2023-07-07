@@ -17,6 +17,15 @@
   z-index: 1;
 }
 
+.fixed {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
 .glitch:before {
   content: attr(data-text);
   position: absolute;

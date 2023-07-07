@@ -46,7 +46,7 @@ const AboutSection = () => {
             alt="Profile pic Leonardo"
           />
         </aside>
-        <aside className="animation-fade md:col-span-1 md:pr-[75px] px-[10px] md:px-0">
+        <aside className="md:col-span-1 md:pr-[75px] px-[10px] md:px-0">
           <h4 className="font1 text-my-pink-300 text-[20px] text-justify md:text-left uppercase mb-[20px] md:mb-[10px] font-medium">
             Muito prazer! Eu sou o Léo :)
           </h4>

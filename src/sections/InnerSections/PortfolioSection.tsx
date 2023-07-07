@@ -47,7 +47,7 @@ const PortfolioSection = () => {
           <h2 className="font1 text-white md:text-[18px] text-center md:px-[150px] -pt-[20px]">
             Conheça alguns dos projetos que atuei como desenvolvedor
           </h2>
-          <div className="animation-fade pt-[50px] grid md:grid-cols-2 w-full xl:w-[1000px] gap-y-[100px] md:gap-y-[75px] gap-x-[40px]">
+          <div className="pt-[50px] grid md:grid-cols-2 w-full xl:w-[1000px] gap-y-[100px] md:gap-y-[75px] gap-x-[40px]">
             {projectsGallery.map((project, index) => (
               <div
                 key={index}

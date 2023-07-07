@@ -11,9 +11,20 @@
 .glitch2 {
   position: relative;
   color: #d64e95;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
+  z-index: 1;
   animation: shift 4.5s ease-in-out infinite alternate;
   transform: skewX(0deg);
+}
+
+.fixed2 {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: #d64e95;
+  font-size: 18px;
+  letter-spacing: 3px;
   z-index: 1;
 }
 

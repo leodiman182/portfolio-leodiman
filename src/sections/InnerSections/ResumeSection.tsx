@@ -18,7 +18,7 @@ const ProjectsSection = () => {
           </a>
         </div>
       </aside>
-      <article className="animation-fade md:grid md:grid-cols-2 my-[40px] md:mt-[100px] md:mb-[50px] px-[12px] md:px-0">
+      <article className="md:grid md:grid-cols-2 my-[40px] md:mt-[100px] md:mb-[50px] px-[12px] md:px-0">
         <aside className="md:col-span-1 text-white">
           <h2 className="font2 text-my-pink-300 text-[30px] font-bold text-center md:text-left md:px-[75px] py-[18px] md:py-0">
             Bio
