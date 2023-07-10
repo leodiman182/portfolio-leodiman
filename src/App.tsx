@@ -29,15 +29,22 @@ function App() {
       )}
     >
       {page === undefined ? (
-        <div className="h-full w-screen relative">
+        <div className="h-full relative">
           <AiOutlineLoading className="absolute bottom-[50%] inset-x-0 text-my-pink-300 text-[75px] mx-auto animate-spin" />
         </div>
       ) : (
-        <main className="max-w-[1024px] mx-auto flex flex-col justify-between h-full">
-          <Header />
-          <SelectedSection />
-          <Footer />
-        </main>
+        <>
+          <main className="max-w-[1024px] mx-auto flex flex-col justify-between h-full">
+            <Header />
+            <SelectedSection />
+            <Footer />
+          </main>
+          {/* <main className="max-w-[1024px] mx-auto flex flex-col justify-between h-full">
+            <Header />
+            <SelectedSection />
+            <Footer />
+          </main> */}
+        </>
       )}
     </div>
   );

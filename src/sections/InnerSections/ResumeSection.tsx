@@ -1,6 +1,7 @@
-import Button from '../../components/Button';
+import { Tooltip } from '@mui/material';
 import CoffeeMachine from '../../components/CoffeeMachine';
 import skills from '../../utils/skills';
+import CustomButtom from '../../components/CustomButton';
 
 const ProjectsSection = () => {
   return (
@@ -14,7 +15,9 @@ const ProjectsSection = () => {
             href="https://drive.google.com/file/d/14AeRbMWZeQypZVXNpSMieRyv9o3-2L_1/view?usp=share_link"
             download
           >
-            <Button onClick={() => null} text="baixar currículo" />
+            <Tooltip title="Baixar currículo em PDF" arrow>
+              <CustomButtom children="Baixar Currículo" />
+            </Tooltip>
           </a>
         </div>
       </aside>

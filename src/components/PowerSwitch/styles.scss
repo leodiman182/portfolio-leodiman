@@ -3,11 +3,12 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 125px;
+  top: 100px;
   left: calc(50% - 75px);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   scale: 30%;
 
   .button {
@@ -150,11 +151,10 @@
 
 @media (min-width: 768px) {
   .power-switch {
-    top: 40px;
-    left: -50px;
+    position: fixed;
+    top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    scale: 50%;
   }
 }

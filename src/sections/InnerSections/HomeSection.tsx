@@ -4,16 +4,17 @@ import GlitchAnimation from '../../components/GlitchAnimation1';
 import GlitchAnimation2 from '../../components/GlitchAnimation2';
 import homeGlitchSound from '../../sounds/home-glitch.mp3';
 import turnOnSound from '../../sounds/menu-item-click.mp3';
-import turnOffSound from '../../sounds/close-menu.mp3';
+import turnOffSound from '../../sounds/switch-off.mp3';
 import '../../styles/styles.css';
 import './styles/home.css';
 import { useContext, useEffect, useState } from 'react';
 import PowerSwitch from '../../components/PowerSwitch';
-import SpecialButton from '../../components/SpecialButton';
 import { BugContext } from '../../context/BugContext/Context';
+import CustomButtom from '../../components/CustomButton';
+import { Tooltip } from '@mui/material';
 
 const HomeSection = () => {
-  const { isBugFixed } = useContext(BugContext);
+  const { isBugFixed, setIsBugFixed } = useContext(BugContext);
   const [playGlitchSound, { stop }] = useSound(homeGlitchSound, {
     volume: 0.1,
     interrupt: true,
@@ -21,6 +22,11 @@ const HomeSection = () => {
   const [playTurnOnSound] = useSound(turnOnSound);
   const [playTurnOffSound] = useSound(turnOffSound);
   const [showMessage, setShowMessage] = useState(false);
+
+  function handleClick() {
+    playTurnOnSound();
+    setIsBugFixed(!isBugFixed);
+  }
 
   useEffect(() => {
     if (showMessage) {
@@ -39,7 +45,9 @@ const HomeSection = () => {
           <GlitchAnimation />
           <GlitchAnimation2 />
           <div className="flex flex-row items-center justify-around mt-[20px]">
-            <SpecialButton />
+            <Tooltip title="Help me fix the bug!" arrow>
+              <CustomButtom onClick={handleClick} children="Fix the Bug" />
+            </Tooltip>
             {isBugFixed ? (
               <span className="green-neon ml-[4px] text-[20px]">fixed</span>
             ) : (
@@ -81,25 +89,27 @@ const HomeSection = () => {
         <div className="flex flex-col relative">
           <GlitchAnimation />
           <GlitchAnimation2 />
-          <div className="flex flex-row items-center justify-around mt-[20px]">
-            <SpecialButton />
+          <div className="flex flex-row items-center justify-around mt-[20px] w-2/3 mx-auto">
+            <Tooltip title="Me ajude a arrumar esse bug..." arrow>
+              <CustomButtom onClick={handleClick} children="Fix the Bug" />
+            </Tooltip>
+            <PowerSwitch
+              onClick={() => {
+                if (!showMessage) {
+                  playTurnOnSound();
+                } else {
+                  playTurnOffSound();
+                  stop();
+                }
+                setShowMessage(!showMessage);
+              }}
+            />
             {isBugFixed ? (
-              <span className="green-neon ml-[4px] text-[20px]">fixed</span>
+              <span className="green-neon text-[20px]">fixed</span>
             ) : (
-              <span className="red-neon ml-[4px] text-[20px]">not fixed</span>
+              <span className="red-neon text-[20px]">not fixed</span>
             )}
           </div>
-          <PowerSwitch
-            onClick={() => {
-              if (!showMessage) {
-                playTurnOnSound();
-              } else {
-                playTurnOffSound();
-                stop();
-              }
-              setShowMessage(!showMessage);
-            }}
-          />
         </div>
         <article className="relative">
           {showMessage ? (

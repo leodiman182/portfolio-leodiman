@@ -7,7 +7,7 @@ import projectsGallery from '../../utils/projectsGallery';
 import '../styles.css';
 import stackList from '../../utils/stackIcons';
 import { Stack } from '@mui/system';
-import { Button } from '@mui/material';
+import { Button, ThemeProvider } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import theme from '../../theme';
 import useSound from 'use-sound';
@@ -107,26 +107,11 @@ const PortfolioSection = () => {
 
           {selectedProject.github !== '' && (
             <a href={selectedProject.github} target="_blank" rel="noreferrer">
-              <Button
-                sx={{
-                  fontSize: '20px',
-                  color: 'black',
-                  backgroundColor: theme.palette.primary.main,
-                  borderColor: theme.palette.primary.main,
-                  borderRadius: '0px',
-                  borderWidth: '2px',
-                  '&:hover, &.Mui-focusVisible': {
-                    backgroundColor: theme.palette.primary.light,
-                    borderWidth: '2px',
-                    color: 'black',
-                    borderColor: theme.palette.primary.light,
-                  },
-                }}
-                variant="contained"
-                startIcon={<GitHubIcon />}
-              >
-                Confira o repositório
-              </Button>
+              <ThemeProvider theme={theme}>
+                <Button startIcon={<GitHubIcon />} variant="contained">
+                  Confira o repositório
+                </Button>
+              </ThemeProvider>
             </a>
           )}
 
