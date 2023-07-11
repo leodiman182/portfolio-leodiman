@@ -50,7 +50,7 @@ const MobileMenu = () => {
       </button>
       <article
         id="mobile-menu"
-        className="bg-zinc-900 absolute top-[90px] right-[20px] w-2/3 p-[25px] overflow-y-hidden z-10 hidden text-right"
+        className="bg-zinc-900 absolute top-[90px] right-[20px] w-2/3 p-[25px] overflow-y-hidden z-10 hidden text-right rounded-md"
       >
         {menuLinks.map((item, index) => (
           <button

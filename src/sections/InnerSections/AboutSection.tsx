@@ -9,6 +9,7 @@ import useSound from 'use-sound';
 import hoverSound from '../../sounds/hover.mp3';
 import '../styles.css';
 import './styles/about.css';
+import CustomButtom from '../../components/CustomButton';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -79,12 +80,10 @@ const AboutSection = () => {
         </aside>
       </article>
       <div className="w-full mx-auto flex flex-col items-center my-[50px]">
-        <button
+        <CustomButtom
+          children="Fale comigo"
           onClick={() => setPage('contact')}
-          className="bg-black text-my-pink-300 border-my-pink-300 border-[2px] py-[10px] text-[26px] px-[30px] duration-150 hover:bg-my-pink-100 hover:border-my-pink-100 hover:text-black uppercase"
-        >
-          fale comigo
-        </button>
+        />
       </div>
       <aside>
         <h3 className="font2 text-my-pink-300 text-[26px] md:text-[34px] py-[40px] md:py-[20px] font-bold text-center md:px-[150px]">

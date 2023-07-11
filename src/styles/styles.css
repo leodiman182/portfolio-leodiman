@@ -93,10 +93,6 @@
     cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
 }
 
-a:hover > svg {
-  fill: black;
-}
-
 .neon {
   color: #fa5aad;
   text-shadow: 0 0 7px #fa5aad, 0 0 10px #fa5aad, 0 0 21px #fa5aad,

@@ -1,5 +1,5 @@
 import '../styles/styles.css';
-import Links from '../utils/Links';
+import FooterLinks from '../components/FooterLinks';
 
 const Footer = () => {
   const date = new Date();
@@ -11,19 +11,7 @@ const Footer = () => {
         <div className="font1 uppercase font-bold text-my-pink-300 mt-[30px] md:mt-0">
           © {year} Leonardo Diman
         </div>
-        <div className="flex flex-row items-center justify-evenly md:w-[275px] h-[45px] mt-[20px] md:mt-0">
-          {Links.map((obj) => (
-            <a
-              target="_blank"
-              className="p-[6px] duration-150 hover:bg-my-pink-100 border-my-pink-300"
-              key={obj.name}
-              href={obj.url}
-              rel="noreferrer"
-            >
-              {obj.smallIcon}
-            </a>
-          ))}
-        </div>
+        <FooterLinks />
       </article>
     </footer>
   );
