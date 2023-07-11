@@ -57,6 +57,7 @@
     -webkit-filter: blur(40px);
     filter: blur(40px);
     opacity: 0;
+    display: none;
   }
 }
 @keyframes slide-out-blurred-bottom {
@@ -70,13 +71,16 @@
     opacity: 1;
   }
   100% {
+    display: none;
+    width: 0;
+    height: 0;
     -webkit-transform: translateY(1000px) scaleY(2) scaleX(0.2);
     transform: translateY(1000px) scaleY(2) scaleX(0.2);
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
     -webkit-filter: blur(40px);
     filter: blur(40px);
-    opacity: 0;
+    /* opacity: 1; */
   }
 }
 

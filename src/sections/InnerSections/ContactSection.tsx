@@ -23,7 +23,7 @@ const ContactSection = () => {
           <h3 className="text-white font1 text-[20px] pb-[20px] md:pb-0">
             Vamos nos conectar
           </h3>
-          <div className="flex flex-row items-center justify-around w-full md:w-[400px] h-[45px] ">
+          <div className="flex flex-row items-center justify-around md:w-[400px] h-[45px] scale-90 w-full">
             <FooterLinks />
           </div>
         </div>

@@ -10,7 +10,6 @@
 
 .social__media {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -101,5 +100,15 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .social__media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
   }
 }
