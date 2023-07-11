@@ -1,60 +1,11 @@
-/* .social {
-  display: inline-block;
-  width: 48px;
-  padding: 8px;
-  border-radius: 25%;
-  background-color: white;
-  margin: 10px;
-  transition: all 0.5s ease-in-out;
-}
-.social svg {
-  transition: transform 0.5s ease-out;
-}
-.social:hover {
-  border-radius: 100%;
-  transform: rotate(405deg);
-}
-.social:hover svg {
-  transform: rotate(315deg);
-}
-
-.linkedin {
-  fill: #0a66c2;
-}
-.linkedin:hover {
-  fill: #fff;
-  background: #0a66c2;
-}
-
-.github {
-  fill: #181717;
-}
-.github:hover {
-  fill: white;
-  background: #181717;
-}
-
-.instagram {
-  fill: #e4405f;
-}
-.instagram:hover {
-  fill: white;
-  background: #e4405f;
-}
-
-.medium {
-  fill: #000;
-}
-.medium:hover {
-  fill: #000;
-  background: #d64e95;
-} */
-
 :root {
   --brand-color-linkedin: #0a66c2;
   --brand-color-github: #181717;
   --brand-color-instagram: #e4405f;
   --brand-color-medium: #000;
+  --icon-background-color: #252631;
+  --text-color: #ececec;
+  --primary-pink: #d64e95;
 }
 
 .social__media {
@@ -65,12 +16,12 @@
   list-style: none;
   & li {
     display: inline-flex;
-    margin: 1rem 2rem;
+    margin: 0 15px;
     &:nth-child(1) {
       & a {
         &:hover {
-          & i {
-            color: var(--brand-color-linkedin);
+          & svg {
+            fill: var(--primary-pink);
           }
         }
       }
@@ -78,8 +29,8 @@
     &:nth-child(2) {
       & a {
         &:hover {
-          & i {
-            color: var(--brand-color-github);
+          & svg {
+            fill: var(--primary-pink);
           }
         }
       }
@@ -87,8 +38,8 @@
     &:nth-child(3) {
       & a {
         &:hover {
-          & i {
-            color: var(--brand-color-instagram);
+          & svg {
+            fill: var(--primary-pink);
           }
         }
       }
@@ -96,27 +47,28 @@
     &:nth-child(4) {
       & a {
         &:hover {
-          & i {
-            color: var(--brand-color-medium);
+          & svg {
+            fill: var(--primary-pink);
           }
         }
       }
     }
     & a {
-      font-size: 1.8rem;
+      font-size: 20px;
       text-decoration: none;
       color: var(--text-color);
       display: flex;
-      width: 6rem;
-      height: 6rem;
+      width: 50px;
+      height: 50px;
       justify-content: center;
       align-items: center;
       position: relative;
       transition: 0.5s ease all;
-      & i {
+      padding: 10px;
+      & svg {
         display: flex;
         font-size: 3rem;
-        color: var(--text-color);
+        fill: var(--text-color);
         z-index: 999;
         will-change: transform;
         transform-style: preserve-3d;
@@ -136,14 +88,15 @@
         will-change: transform;
         transform-style: preserve-3d;
         transition: 0.25s ease-out;
+        padding: 8px;
       }
       &:hover {
         &:after {
           transform: scale3d(0, 0, 0);
           transition: 0.25s ease-in;
         }
-        & i {
-          color: var(--inverse-background-color);
+        & svg {
+          fill: white;
           transform: scale3d(1.5, 1.5, 1);
         }
       }

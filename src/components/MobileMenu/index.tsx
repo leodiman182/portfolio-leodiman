@@ -8,6 +8,7 @@ import { Page } from '../../context/PageContext/Types';
 import openMenuSound from '../../sounds/open-menu.mp3';
 import useSound from 'use-sound';
 import { menuLinks } from '../../utils/menuLinks';
+import './styles.css';
 
 const MobileMenu = () => {
   const { page, setPage } = useContext(PageContext);
@@ -36,6 +37,10 @@ const MobileMenu = () => {
     mobileMenu?.classList.add('slide-out-blurred-bottom');
     mobileMenu?.classList.remove('slide-in-blurred-bottom');
     setOpenMenu(false);
+
+    if (page !== 'home') {
+      playMenuOpenSound();
+    }
   }, [page]);
 
   return (
@@ -50,7 +55,7 @@ const MobileMenu = () => {
       </button>
       <article
         id="mobile-menu"
-        className="bg-zinc-900 absolute top-[90px] right-[20px] w-2/3 p-[25px] overflow-y-hidden z-10 hidden text-right rounded-md"
+        className="menu-color absolute top-[90px] right-[20px] w-2/3 p-[25px] overflow-y-hidden z-10 hidden text-right rounded-md"
       >
         {menuLinks.map((item, index) => (
           <button

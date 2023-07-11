@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '../styles.css';
-import Links from '../../utils/Links';
 import CustomButton from '../../components/CustomButton';
+import FooterLinks from '../../components/FooterLinks';
+import '../styles.css';
 
 const ContactSection = () => {
   const [contactName, setContactName] = useState('');
@@ -24,17 +24,7 @@ const ContactSection = () => {
             Vamos nos conectar
           </h3>
           <div className="flex flex-row items-center justify-around w-full md:w-[400px] h-[45px] ">
-            {Links.map((obj) => (
-              <a
-                target="_blank"
-                className="md:p-[6px] duration-150 border-my-pink-300 md:ml-[30px] hover:bg-my-pink-100"
-                key={obj.name}
-                href={obj.url}
-                rel="noreferrer"
-              >
-                {obj.icon}
-              </a>
-            ))}
+            <FooterLinks />
           </div>
         </div>
         <div className="mb-[40px] flex flex-col md:flex-row items-center justify-between w-full">
