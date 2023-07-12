@@ -29,12 +29,11 @@ const ProjectsSection = () => {
         </aside>
         <aside className="md:col-span-1 md:pr-[75px] text-center md:text-left">
           <p className="font1 text-white text-[18px] font-normal">
-            Ingressei na carreira de tecnologia por acaso e acabei me
-            encantando. Após transição de carreira, tive a oportunidade e o
-            privilégio de estagiar com um desenvolvedor sênior logo no começo
-            dos meus estudos, que me abriu as portas e me ensinou tanto na parte
-            técnica, quanto pessoal, me ajudando a me enxergar dentro dessa
-            área.
+            Ingressei na área de tecnologia por acaso e acabei me encantando.
+            Após transição de carreira, tive a oportunidade e o privilégio de
+            estagiar com um desenvolvedor sênior logo no começo dos meus
+            estudos, que me abriu as portas e me ensinou tanto na parte técnica,
+            quanto pessoal, me ajudando a me enxergar dentro dessa área.
             <br />
             <br />
             Alguns meses depois, comecei meus estudos na Trybe, escola de
@@ -74,7 +73,7 @@ const ProjectsSection = () => {
           {skills.map((el) => (
             <>
               <div className="flex flex-row md:flex-col justify-between md:justify-start row-span-1 md:col-span-1 mb-[30px] md:mb-0">
-                <h4 className="uppercase font1 md:text-[20px] text-my-pink-300">
+                <h4 className="uppercase font1 md:text-[20px] text-my-pink-300 font-bold">
                   {el.skillArea}
                 </h4>
                 <ul className="text-white font1 md:mt-[20px]">
